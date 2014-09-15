@@ -3,7 +3,7 @@
 lines = []
 
 def parse_comment(line)
-  "\\echo '#{line.split(" ").drop(1).join(" ")}'"
+  "\\qecho '#{line.split(" ").drop(1).join(" ")}'"
 end
 
 def parse_date(line)
@@ -11,6 +11,12 @@ def parse_date(line)
 end
 
 def parse_number(line)
+
+  #fix for Oracle's naked NUMBER type...
+  if line.match /_OBS_NO/
+    line = line.gsub("NUMBER", "NUMBER(8,0)")
+  end
+
   nums = line.match /\((\d*),(\d*)\)/
   return line.gsub("NUMBER", "DOUBLE PRECISION") if nums.nil?
 
@@ -36,14 +42,18 @@ end
 File.open(ARGV[0]).each_line do |line|
 
   line = parse_comment(line) if line.match /^PROMPT/
-  line = parse_number(line) if line.match /\sNUMBER/
-  line = parse_date(line) if line.match /\sDATE/
-  line = line.gsub("VARCHAR2", "VARCHAR") if line.match /\sVARCHAR/
-  lines << line.strip
 
+  if File.basename(ARGV[0]).upcase == "PPDM39_TAB.SQL"
+    line = parse_number(line) if line.match /\sNUMBER/
+    line = parse_date(line) if line.match /\sDATE/
+    line = line.gsub("VARCHAR2", "VARCHAR") if line.match /\sVARCHAR/
+    line = line.gsub("BLOB", "BYTEA") if line.match /\sBLOB/
+  end
+
+  lines << line.strip
 end
 
-path = "c:/dev/pg_ppdm39/PPDM39_TAB.SQL"
+path = "c:/dev/pg_ppdm39/postgres/#{File.basename(ARGV[0])}"
 open(path, "w"){|f| f.puts lines.join("\n") }
 
-#puts lines.join()
+#puts lines.join("\n")
