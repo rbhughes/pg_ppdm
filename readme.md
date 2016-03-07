@@ -15,16 +15,12 @@ By opening and accessing this information, you are agreeing to these Terms and C
 
 #### Quick Start:
 
-1. Ensure that postgresql\bin stuff is in the PATH:
-```C:\dev\PostgreSQL\9.5\bin```
-2. Clone this repo (assume c:\dev here):
-```git clone https://github.com/rbhughes/pg_ppdm39.git```
-3. CD to the creation scripts folder:
-```cd c:/dev/pg_ppdm39/postgres```
-4. Run these commands after loggin in to psql thusly:
-```psql -U postgres```
+1. Ensure that postgresql\bin stuff is in the PATH: `C:\dev\PostgreSQL\9.5\bin`
+2. Clone this repo (assume c:\dev here): `git clone https://github.com/rbhughes/pg_ppdm39.git`
+3. CD to the creation scripts folder: `cd c:/dev/pg_ppdm39/postgres`
+4. Run these commands after loggin in to psql thusly: `psql -U postgres`
 
-```sh
+```sql
 CREATE ROLE ppdm_user WITH PASSWORD 'ppdm_pass';
 ALTER ROLE ppdm_user WITH LOGIN SUPERUSER CREATEROLE CREATEDB REPLICATION;
 SET ROLE ppdm_user;
