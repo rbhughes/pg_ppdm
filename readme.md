@@ -38,7 +38,7 @@ SET search_path to ppdm;
 You should have a *ppdm39* database with gobs of tables in the *ppdm* schema
 owned by the admin *ppdm_user* with a password of *ppdm_pass* like this:
 
+[ppdm]:http://ppdm.org/
 
 ![Alt text](/pgadmin3.png?raw=true "pgadmin_view")
 
-[ppdm]:http://ppdm.org/ !U!U
