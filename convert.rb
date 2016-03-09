@@ -63,5 +63,5 @@ File.open(ARGV[0]).each_line do |line|
   lines << line.strip
 end
 
-path = "c:/dev/pg_ppdm39/postgres/#{File.basename(ARGV[0])}"
+path = "c:/dev/pg_ppdm/postgres_39/#{File.basename(ARGV[0])}"
 open(path, "w"){|f| f.puts lines.join("\n") }
