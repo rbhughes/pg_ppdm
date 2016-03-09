@@ -13,6 +13,8 @@ By opening and accessing this information, you are agreeing to these Terms and C
 
 #####This is a work in progress! Just started testing again on 9.5.1.
 
+TODO: gotta set the schema! don't do that stuff below just yet.
+
 #### Quick Start:
 
 1. Ensure that postgresql\bin stuff is in the PATH: `C:\dev\PostgreSQL\9.5\bin`
@@ -24,11 +26,19 @@ By opening and accessing this information, you are agreeing to these Terms and C
 CREATE ROLE ppdm_user WITH PASSWORD 'ppdm_pass';
 ALTER ROLE ppdm_user WITH LOGIN SUPERUSER CREATEROLE CREATEDB REPLICATION;
 SET ROLE ppdm_user;
-CREATE DATABASE ppdm39;
+CREATE DATABASE ppdm39 WITH OWNER ppdm_user;
+\connect ppdm39 ppdm_user;   <...and enter password, 'ppdm_pass'>
+CREATE SCHEMA IF NOT EXISTS ppdm AUTHORIZATION ppdm_user;
+SET search_path to ppdm;
 \i PPDM39.sql
 \q
+
 ```
 
+You should have a *ppdm39* database with gobs of tables in the *ppdm* schema
+owned by the admin *ppdm_user* with a password of *ppdm_pass* like this:
 
 
-[ppdm]:http://ppdm.org/
+![Alt text](/pgadmin3.png?raw=true "pgadmin_view")
+
+[ppdm]:http://ppdm.org/ !U!U
