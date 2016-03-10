@@ -1,0 +1,4171 @@
+alter table APPLIC_DESC add constraint
+APPD_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table APPLIC_DESC add constraint
+APPD_OUOM_FK1 foreign key (DESC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table APPLIC_DESC add constraint
+APPD_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table APPLIC_DESC add constraint
+APPD_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table AREA_DESCRIPTION add constraint
+AD_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table AREA_DESCRIPTION add constraint
+AD_OUOM_FK1 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table AREA_DESCRIPTION add constraint
+AD_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_AUTHORITY add constraint
+BAAU_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_DESCRIPTION add constraint
+BAD_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_DESCRIPTION add constraint
+BAD_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_DESCRIPTION add constraint
+BAD_OUOM_FK2 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_DESCRIPTION add constraint
+BAD_OUOM_FK3 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_DESCRIPTION add constraint
+BAD_OUOM_FK4 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_LICENSE_COND add constraint
+BALICC_OUOM_FK foreign key (CONDITION_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_LICENSE_COND add constraint
+BALICC_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table BA_LICENSE_COND add constraint
+BALICC_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_ADDITIVE_SPEC add constraint
+CAS_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_ADDITIVE_SPEC add constraint
+CAS_OUOM_FK1 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_ADDITIVE_SPEC add constraint
+CAS_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_ADDITIVE_SPEC add constraint
+CAS_OUOM_FK3 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_EQUIP_SPEC add constraint
+CEQS_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_EQUIP_SPEC add constraint
+CEQS_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_EQUIP_SPEC add constraint
+CEQS_OUOM_FK2 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_EQUIP_SPEC add constraint
+CEQS_OUOM_FK3 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CAT_EQUIP_SPEC add constraint
+CEQS_OUOM_FK4 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CLASS_LEVEL_DESC add constraint
+CLSLD_OUOM_FK foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CLASS_LEVEL_DESC add constraint
+CLSLD_OUOM_FK1 foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CLASS_LEVEL_DESC add constraint
+CLSLD_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONSULT_COMPONENT add constraint
+COCOM_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONTRACT add constraint
+C_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONTRACT add constraint
+C_OUOM_FK1 foreign key (PRIMARY_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONTRACT add constraint
+C_OUOM_FK2 foreign key (SECONDARY_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONTRACT add constraint
+C_OUOM_FK3 foreign key (LIABILITY_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONTRACT add constraint
+C_OUOM_FK4 foreign key (SURRENDER_NOTICE_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_ALLOW_EXPENSE add constraint
+CAE_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_MKTG_ELECT_SUBST add constraint
+CMES_OUOM_FK foreign key (SUBSTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_OPER_PROC add constraint
+COP_OUOM_FK foreign key (UNAUTHORIZED_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_OPER_PROC add constraint
+COP_OUOM_FK1 foreign key (DEV_PENALTY_COST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_OPER_PROC add constraint
+COP_OUOM_FK2 foreign key (CLAIM_AMOUNT_LIMIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_OPER_PROC add constraint
+COP_OUOM_FK3 foreign key (EQUIP_PENALTY_COST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_OPER_PROC add constraint
+COP_OUOM_FK4 foreign key (MKTG_FEE_ELECT_COST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CONT_OPER_PROC add constraint
+COP_OUOM_FK5 foreign key (EXPL_PENALTY_COST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_COORDINATE_SYSTEM add constraint
+CS_OUOM_FK foreign key (DATUM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_COORDINATE_SYSTEM add constraint
+CS_OUOM_FK1 foreign key (N_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_COORDINATE_SYSTEM add constraint
+CS_OUOM_FK2 foreign key (REFERENCE_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_COORD_ACQUISITION add constraint
+CSCA_OUOM_FK foreign key (HORIZONTAL_ACCURACY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_COORD_ACQUISITION add constraint
+CSCA_OUOM_FK1 foreign key (VERTICAL_ACCURACY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_ELLIPSOID add constraint
+CSE_OUOM_FK foreign key (AXIS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_GEODETIC_DATUM add constraint
+CSGD_OUOM_FK foreign key (ORIGIN_ANGULAR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table CS_PRIME_MERIDIAN add constraint
+CSPM_OUOM_FK foreign key (LONGITUDE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table ECOZONE add constraint
+EZ_OUOM_FK foreign key (DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table ENTITLEMENT add constraint
+ENT_OUOM_FK foreign key (PRIMARY_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_SPEC add constraint
+EQS_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_SPEC add constraint
+EQS_OUOM_FK1 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_SPEC add constraint
+EQS_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_SPEC add constraint
+EQS_OUOM_FK3 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_SPEC add constraint
+EQS_OUOM_FK4 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_USE_STAT add constraint
+EQUS_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_USE_STAT add constraint
+EQUS_OUOM_FK1 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_USE_STAT add constraint
+EQUS_OUOM_FK2 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table EQUIPMENT_USE_STAT add constraint
+EQUS_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY add constraint
+FAC_OUOM_FK foreign key (DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY add constraint
+FAC_OUOM_FK1 foreign key (ELEVATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY add constraint
+FAC_OUOM_FK2 foreign key (FACILITY_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY_DESCRIPTION add constraint
+FACD_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY_DESCRIPTION add constraint
+FACD_OUOM_FK1 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY_DESCRIPTION add constraint
+FACD_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY_DESCRIPTION add constraint
+FACD_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY_DESCRIPTION add constraint
+FACD_OUOM_FK4 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FACILITY_SUBSTANCE add constraint
+FACSU_OUOM_FK foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FINANCE add constraint
+FIN_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FIN_COST_SUMMARY add constraint
+FINCS_OUOM_FK foreign key (COST_PER_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FIN_COST_SUMMARY add constraint
+FINCS_OUOM_FK1 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table FOSSIL_DESC add constraint
+FOSD_OUOM_FK foreign key (VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table HSE_INCIDENT add constraint
+HI_OUOM_FK foreign key (INCIDENT_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table HSE_INCIDENT_DETAIL add constraint
+HID_OUOM_FK foreign key (INCIDENT_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table HSE_INCIDENT_SUBSTANCE add constraint
+HISU_OUOM_FK foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table HSE_INCIDENT_WEATHER add constraint
+HIW_OUOM_FK foreign key (TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table INSTRUMENT_DETAIL add constraint
+INSD_OUOM_FK foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table INSTRUMENT_DETAIL add constraint
+INSD_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table INSTRUMENT_DETAIL add constraint
+INSD_OUOM_FK2 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table INSTRUMENT_DETAIL add constraint
+INSD_OUOM_FK3 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table INSTRUMENT_DETAIL add constraint
+INSD_OUOM_FK4 foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table INT_SET_STATUS add constraint
+INTS_OUOM_FK foreign key (EFFECTIVE_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_AREA add constraint
+LRAR_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_AREA add constraint
+LRAR_OUOM_FK1 foreign key (NET_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK foreign key (SECONDARY_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK1 foreign key (TERMIN_NOTICE_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK2 foreign key (HIGH_WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK3 foreign key (PRIMARY_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK4 foreign key (OFFSHORE_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK5 foreign key (LOW_WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_RIGHT add constraint
+LR_OUOM_FK6 foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE add constraint
+LS_OUOM_FK foreign key (SOLD_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE add constraint
+LS_OUOM_FK1 foreign key (TOTAL_BONUS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE add constraint
+LS_OUOM_FK2 foreign key (TOTAL_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_OFFERING add constraint
+LSO_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_OFFERING add constraint
+LSO_OUOM_FK1 foreign key (TERM_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_OFFERING_AREA add constraint
+LSOA_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_OFFERING_AREA add constraint
+LSOA_OUOM_FK1 foreign key (NET_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_REQUEST add constraint
+LSRQ_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_REQUEST add constraint
+LSRQ_OUOM_FK1 foreign key (TERM_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_REQUEST add constraint
+LSRQ_OUOM_FK2 foreign key (REQUEST_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SALE_WORK_BID add constraint
+LSWB_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_SIZE add constraint
+LRSZ_OUOM_FK foreign key (SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LAND_STATUS add constraint
+LRST_OUOM_FK foreign key (EFFECTIVE_TERM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_CARTER_LOC add constraint
+LECTR_OUOM_FK foreign key (EW_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_CARTER_LOC add constraint
+LECTR_OUOM_FK1 foreign key (NS_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_CONGRESS_LOC add constraint
+LECON_OUOM_FK foreign key (EW_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_CONGRESS_LOC add constraint
+LECON_OUOM_FK1 foreign key (NS_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_NE_LOC add constraint
+LENE_OUOM_FK foreign key (EW_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_NE_LOC add constraint
+LENE_OUOM_FK1 foreign key (NS_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_OFFSHORE_LOC add constraint
+LEOFF_OUOM_FK foreign key (EW_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_OFFSHORE_LOC add constraint
+LEOFF_OUOM_FK1 foreign key (NS_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_OHIO_LOC add constraint
+LEOH_OUOM_FK foreign key (EW_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_OHIO_LOC add constraint
+LEOH_OUOM_FK1 foreign key (NS_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_TEXAS_LOC add constraint
+LETX_OUOM_FK foreign key (EW_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LEGAL_TEXAS_LOC add constraint
+LETX_OUOM_FK1 foreign key (NS_FOOTAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_DEP_ENV_INT add constraint
+LIDEI_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_DEP_ENV_INT add constraint
+LIDEI_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_DESC_OTHER add constraint
+LIDO_OUOM_FK foreign key (DESCRIPTION_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_INTERVAL add constraint
+LII_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_INTERVAL add constraint
+LII_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_LOG add constraint
+LIL_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_LOG add constraint
+LIL_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK foreign key (SAMPLE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK1 foreign key (TOTAL_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK2 foreign key (TOTAL_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK3 foreign key (TOP_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK4 foreign key (INITIAL_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK5 foreign key (FINAL_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK6 foreign key (BASE_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE add constraint
+LISA_OUOM_FK7 foreign key (SAMPLE_INTERVAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE_COLLECTION add constraint
+LISAC_OUOM_FK foreign key (PORTION_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE_COLLECTION add constraint
+LISAC_OUOM_FK1 foreign key (PORTION_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table LITH_SAMPLE_COLLECTION add constraint
+LISAC_OUOM_FK2 foreign key (PORTION_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIGATION add constraint
+OB_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIGATION add constraint
+OB_OUOM_FK1 foreign key (OBLIGATION_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIGATION add constraint
+OB_OUOM_FK2 foreign key (NOTICE_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIG_DEDUCTION add constraint
+OBD_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIG_PAYMENT add constraint
+OBP_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIG_PAYMENT_INSTR add constraint
+OBPI_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIG_PAYMENT_RATE add constraint
+OBPR_OUOM_FK foreign key (PAYMENT_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIG_PAY_DETAIL add constraint
+OBPD_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table OBLIG_PAY_DETAIL add constraint
+OBPD_OUOM_FK1 foreign key (RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PALEO_FOSSIL_LIST add constraint
+PAFL_OUOM_FK foreign key (DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PALEO_SUMMARY add constraint
+PASU_OUOM_FK foreign key (TOTAL_SAMPLE_INTERVAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PALEO_SUM_INTERVAL add constraint
+PASI_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PALEO_SUM_INTERVAL add constraint
+PASI_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_DECLINE_CASE add constraint
+PDENDFC_OUOM_FK foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_DECLINE_SEGMENT add constraint
+PDENDF_OUOM_FK foreign key (DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_DECLINE_SEGMENT add constraint
+PDENDF_OUOM_FK1 foreign key (RATIO_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_DECLINE_SEGMENT add constraint
+PDENDF_OUOM_FK2 foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_DECLINE_SEGMENT add constraint
+PDENDF_OUOM_FK3 foreign key (RATIO_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_DECLINE_SEGMENT add constraint
+PDENDF_OUOM_FK4 foreign key (RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK foreign key (CASING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK1 foreign key (DIFF_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK2 foreign key (FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK3 foreign key (MEAS_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK4 foreign key (TUBING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK5 foreign key (STATIC_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK6 foreign key (PRODUCTION_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK7 foreign key (PRODUCTION_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_OUOM_FK8 foreign key (CHOKE_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK foreign key (CUM_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK1 foreign key (FINAL_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK2 foreign key (INITIAL_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK3 foreign key (INITIAL_CUM_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK4 foreign key (GAS_ABANDON_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK5 foreign key (FINAL_CUM_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK6 foreign key (INITIAL_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK7 foreign key (CRITICAL_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK8 foreign key (CRITICAL_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK9 foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_OUOM_FK10 foreign key (POOL_DATUM_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_PR_STR_ALLOWABLE add constraint
+PDENPSA_OUOM_FK foreign key (ALLOWABLE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK1 foreign key (GAS_ORIGINAL_IN_PLACE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK2 foreign key (INIT_RES_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK3 foreign key (OIL_IN_PLACE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK4 foreign key (ORIGINAL_GOR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK5 foreign key (PERMEABILITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK6 foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK7 foreign key (RECOV_SOL_GAS_IN_PLACE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK8 foreign key (ORIG_SOL_GAS_IN_PLACE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK9 foreign key (OIL_ORIGINAL_IN_PLACE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK10 foreign key (NET_PAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK11 foreign key (GROSS_PAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK12 foreign key (GAS_ABANDON_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_OUOM_FK13 foreign key (GAS_IN_PLACE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_DISPOSITION add constraint
+PDENVD_OUOM_FK foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_DISPOSITION add constraint
+PDENVD_OUOM_FK1 foreign key (VOLUME_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_DISPOSITION add constraint
+PDENVD_OUOM_FK2 foreign key (VOLUME_QUALITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK foreign key (BOE_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK1 foreign key (CO2_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK2 foreign key (GAS_QUALITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK3 foreign key (GAS_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK4 foreign key (INJECTION_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK5 foreign key (INVENT_CLOSE_BAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK6 foreign key (INVENT_OPEN_BAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK7 foreign key (NGL_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK8 foreign key (NITROGEN_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK9 foreign key (OIL_QUALITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK10 foreign key (OIL_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK11 foreign key (PERIOD_ON_INJECTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK12 foreign key (PERIOD_ON_PRODUCTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK13 foreign key (PRIMARY_ALLOWABLE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK14 foreign key (SULPHUR_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK15 foreign key (VOLUME_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_OUOM_FK16 foreign key (WATER_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMM_OTHER add constraint
+PDENVSO_OUOM_FK foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PDEN_VOL_SUMM_OTHER add constraint
+PDENVSO_OUOM_FK1 foreign key (VOLUME_QUALITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_AUDIT_HISTORY add constraint
+PAH_OUOM_FK foreign key (ORIGINAL_NUMERIC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_AUDIT_HISTORY add constraint
+PAH_OUOM_FK1 foreign key (NEW_NUMERIC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_MAP_RULE add constraint
+PMR_OUOM_FK foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_MAP_RULE add constraint
+PMR_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_METRIC_VALUE add constraint
+PMV_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_METRIC_VALUE add constraint
+PMV_OUOM_FK1 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_METRIC_VALUE add constraint
+PMV_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_METRIC_VALUE add constraint
+PMV_OUOM_FK3 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_METRIC_VALUE add constraint
+PMV_OUOM_FK4 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_QUALITY_CONTROL add constraint
+PQC_OUOM_FK foreign key (CURRENT_NUMERIC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_RULE_DETAIL add constraint
+PRD_OUOM_FK foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_RULE_DETAIL add constraint
+PRD_OUOM_FK1 foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_RULE_DETAIL add constraint
+PRD_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PPDM_RULE_DETAIL add constraint
+PRD_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_LEASE_UNIT add constraint
+PLU_OUOM_FK foreign key (ACREAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_LEASE_UNIT_VERSION add constraint
+PLUV_OUOM_FK foreign key (ACREAGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_STRING add constraint
+PS_OUOM_FK foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_STRING add constraint
+PS_OUOM_FK1 foreign key (TOTAL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_STRING add constraint
+PS_OUOM_FK2 foreign key (PROD_STRING_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_STRING add constraint
+PS_OUOM_FK3 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_STRING_FORMATION add constraint
+PSF_OUOM_FK foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROD_STRING_FORMATION add constraint
+PSF_OUOM_FK1 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROJECT_STEP add constraint
+PROJS_OUOM_FK foreign key (ACTUAL_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROJECT_STEP add constraint
+PROJS_OUOM_FK1 foreign key (ESTIMATED_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table PROJECT_STEP_TIME add constraint
+PROJSTI_OUOM_FK foreign key (TOTAL_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RATE_SCHED_DETAIL add constraint
+RATESD_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_ECO_RUN add constraint
+RSV_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_ECO_SCHEDULE add constraint
+RSESC_OUOM_FK foreign key (SCHEDULE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_ECO_SCHEDULE add constraint
+RSESC_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_ECO_SCHEDULE add constraint
+RSESC_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_ECO_VOLUME add constraint
+RSEV_OUOM_FK foreign key (REMAINING_BALANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_PROD_PROPERTY add constraint
+RSPP_OUOM_FK foreign key (HEAT_CONTENT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_PROD_PROPERTY add constraint
+RSPP_OUOM_FK1 foreign key (OIL_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_PROD_PROPERTY add constraint
+RSPP_OUOM_FK2 foreign key (SULPHUR_CONTENT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_VOL_REVISION add constraint
+RSVR_OUOM_FK foreign key (NEW_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_VOL_REVISION add constraint
+RSVR_OUOM_FK1 foreign key (REVISION_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_VOL_SUMMARY add constraint
+RSVS_OUOM_FK foreign key (CURRENT_BALANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_VOL_SUMMARY add constraint
+RSVS_OUOM_FK1 foreign key (OPEN_BALANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RESENT_VOL_SUMMARY add constraint
+RSVS_OUOM_FK2 foreign key (YIELD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_DATA_STORE_STRUCTURE add constraint
+RMDSS_OUOM_FK foreign key (DIM_HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_DATA_STORE_STRUCTURE add constraint
+RMDSS_OUOM_FK1 foreign key (DIM_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_DATA_STORE_STRUCTURE add constraint
+RMDSS_OUOM_FK2 foreign key (DIM_WIDTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_DATA_STORE_STRUCTURE add constraint
+RMDSS_OUOM_FK3 foreign key (DIM_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_IMAGE_LOC add constraint
+RMIML_OUOM_FK foreign key (LOG_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_IMAGE_SECT add constraint
+RMIMS_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_IMAGE_SECT add constraint
+RMIMS_OUOM_FK1 foreign key (SCALE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_IMAGE_SECT add constraint
+RMIMS_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_IMAGE_SECT add constraint
+RMIMS_OUOM_FK3 foreign key (SCALE_DEPTH_INTERVAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_INFO_COORD_QUALITY add constraint
+RMICQ_OUOM_FK foreign key (HORIZONTAL_ACCURACY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_INFO_COORD_QUALITY add constraint
+RMICQ_OUOM_FK1 foreign key (VERTICAL_ACCURACY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_INFO_ITEM_DESC add constraint
+RMIID_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_INFO_ITEM_DESC add constraint
+RMIID_OUOM_FK1 foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_INFO_ITEM_DESC add constraint
+RMIID_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_INFO_ITEM_DESC add constraint
+RMIID_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK foreign key (DATUM_VEL_CORRECTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK1 foreign key (FIRST_SAMPLE_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK2 foreign key (HORIZONTAL_SCALE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK3 foreign key (RECORD_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK4 foreign key (REFERENCE_DATUM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK5 foreign key (REPLACEMENT_VEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK6 foreign key (SAMPLE_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK7 foreign key (STATIC_CORRECTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_SEIS_TRACE add constraint
+RMST_OUOM_FK8 foreign key (VERTICAL_SCALE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_WELL_LOG add constraint
+RMWL_OUOM_FK foreign key (REPORTED_BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table RM_WELL_LOG add constraint
+RMWL_OUOM_FK1 foreign key (REPORTED_TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table R_SEIS_SRC_MAKE add constraint
+R_SSM_OUOM_FK foreign key (VIB_PEAK_FORCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_ANALYSIS add constraint
+SA_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_ANALYSIS add constraint
+SA_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_ANALYSIS add constraint
+SA_OUOM_FK2 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_GAS_ANAL_DETAIL add constraint
+SAGAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_GAS_ANAL_DETAIL add constraint
+SAGAD_OUOM_FK1 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_GAS_ANAL_DETAIL add constraint
+SAGAD_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANALYSIS add constraint
+SAOA_OUOM_FK foreign key (GOR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANALYSIS add constraint
+SAOA_OUOM_FK1 foreign key (MEASURED_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANALYSIS add constraint
+SAOA_OUOM_FK2 foreign key (OIL_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANALYSIS add constraint
+SAOA_OUOM_FK3 foreign key (OIL_ANALYSIS_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANAL_DETAIL add constraint
+SAOAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANAL_DETAIL add constraint
+SAOAD_OUOM_FK1 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_ANAL_DETAIL add constraint
+SAOAD_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_VISCOSITY add constraint
+SAOV_OUOM_FK foreign key (OIL_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_VISCOSITY add constraint
+SAOV_OUOM_FK1 foreign key (OIL_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_OIL_VISCOSITY add constraint
+SAOV_OUOM_FK2 foreign key (POUR_POINT_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANALYSIS add constraint
+SAWA_OUOM_FK foreign key (RESERVOIR_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANALYSIS add constraint
+SAWA_OUOM_FK1 foreign key (RW_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANALYSIS add constraint
+SAWA_OUOM_FK2 foreign key (WATER_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANALYSIS add constraint
+SAWA_OUOM_FK3 foreign key (WATER_SALINITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANALYSIS add constraint
+SAWA_OUOM_FK4 foreign key (WATER_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANAL_DTL add constraint
+SAWAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANAL_DTL add constraint
+SAWAD_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SAMPLE_WATER_ANAL_DTL add constraint
+SAWAD_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK foreign key (REP_WATER_ACOUSTIC_VEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK1 foreign key (ACQTN_SHOTPT_INTERVAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK2 foreign key (ACQTN_SHOT_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK3 foreign key (ENERGY_OPRG_PSR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK4 foreign key (ENERGY_SHOT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK5 foreign key (RCRD_SAMPLE_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK6 foreign key (RCRD_REC_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK7 foreign key (RCRD_NEAR_SURF_CORR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK8 foreign key (MONITOR_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK9 foreign key (ENERGY_SWEEP_TAPER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK10 foreign key (ENERGY_SWEEP_MVUP_DIST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK11 foreign key (ENERGY_SWEEP_FREQ_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK12 foreign key (ENERGY_SWEEP_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK13 foreign key (ENERGY_SRC_ARRAY_SPC_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK14 foreign key (RCVR_LINE_SPACING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK15 foreign key (ENERGY_OPRG_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK16 foreign key (ENERGY_CHARGE_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK17 foreign key (ACQTN_SHOT_LINE_SPACING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK18 foreign key (ACQTN_BIN_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_OUOM_FK19 foreign key (WELL_SRC_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACTIVITY add constraint
+SSACT_OUOM_FK foreign key (TOTAL_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACTIVITY add constraint
+SSACT_OUOM_FK1 foreign key (ACTIVITY_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACTIVITY add constraint
+SSACT_OUOM_FK2 foreign key (LINE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_ACTIVITY add constraint
+SSACT_OUOM_FK3 foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_BIN_GRID add constraint
+SSBG_OUOM_FK foreign key (BIN_POINT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_BIN_POINT_VERSION add constraint
+SSBPV_OUOM_FK foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_BIN_POINT_VERSION add constraint
+SSBPV_OUOM_FK1 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_BIN_POINT_VERSION add constraint
+SSBPV_OUOM_FK2 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_BIN_POINT_VERSION add constraint
+SSBPV_OUOM_FK3 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_CHANNEL add constraint
+SSCH_OUOM_FK foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_CHANNEL add constraint
+SSCH_OUOM_FK1 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_CHANNEL add constraint
+SSCH_OUOM_FK2 foreign key (Z_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_INSPECTION add constraint
+SSI_OUOM_FK foreign key (INSPECTED_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_INSPECTION add constraint
+SSI_OUOM_FK1 foreign key (MIN_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_PATCH_DESC add constraint
+SSPD_OUOM_FK foreign key (OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_PICK add constraint
+SSPK_OUOM_FK foreign key (SEIS_PICK_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_PICK add constraint
+SSPK_OUOM_FK1 foreign key (PICK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT add constraint
+SSPT_OUOM_FK foreign key (DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT add constraint
+SSPT_OUOM_FK1 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT add constraint
+SSPT_OUOM_FK2 foreign key (MEASURED_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_FLOW add constraint
+SSPF_OUOM_FK foreign key (FLOW_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_FLOW add constraint
+SSPF_OUOM_FK1 foreign key (FLOW_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_SUMMARY add constraint
+SSPSU_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_SUMMARY add constraint
+SSPSU_OUOM_FK1 foreign key (LINE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_VERSION add constraint
+SSPV_OUOM_FK foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_VERSION add constraint
+SSPV_OUOM_FK1 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_VERSION add constraint
+SSPV_OUOM_FK2 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_POINT_VERSION add constraint
+SSPV_OUOM_FK3 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECORD add constraint
+SSR_OUOM_FK foreign key (TIME_DELAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECORD add constraint
+SSR_OUOM_FK1 foreign key (UPHOLE_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECVR_SETUP add constraint
+SSRS_OUOM_FK foreign key (AVG_STREAMER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECVR_SETUP add constraint
+SSRS_OUOM_FK1 foreign key (GROUP_SPACING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECVR_SETUP add constraint
+SSRS_OUOM_FK2 foreign key (OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECVR_SETUP add constraint
+SSRS_OUOM_FK3 foreign key (SPREAD_DESCRIPTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_RECVR_SETUP add constraint
+SSRS_OUOM_FK4 foreign key (RCVR_SPACING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SET add constraint
+SS_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SET_AUTHORIZE add constraint
+SSAU_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SET_PLAN add constraint
+SSP_OUOM_FK foreign key (PLANNED_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SP_SURVEY add constraint
+SSS_OUOM_FK foreign key (AZIMUTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SP_SURVEY add constraint
+SSS_OUOM_FK1 foreign key (EW_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SP_SURVEY add constraint
+SSS_OUOM_FK2 foreign key (POINT_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_SP_SURVEY add constraint
+SSS_OUOM_FK3 foreign key (NS_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_STREAMER add constraint
+SST_OUOM_FK foreign key (STREAMER_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_STREAMER_BUILD add constraint
+SSB_OUOM_FK foreign key (POSITION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_TRANSACTION add constraint
+SSTR_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_TRANSACTION add constraint
+SSTR_OUOM_FK1 foreign key (LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_TRANS_COMPONENT add constraint
+SSTC_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK foreign key (VELOCITY_INCLINATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK1 foreign key (RECEIVER_VERT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK2 foreign key (SOURCE_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK3 foreign key (SOURCE_VERT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK4 foreign key (SEIS_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK5 foreign key (RECEIVER_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY add constraint
+SSVL_OUOM_FK6 foreign key (VELOCITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY_INTERVAL add constraint
+SSVI_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY_INTERVAL add constraint
+SSVI_OUOM_FK1 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY_INTERVAL add constraint
+SSVI_OUOM_FK2 foreign key (SEIS_TIME_DATUM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY_INTERVAL add constraint
+SSVI_OUOM_FK3 foreign key (VELOCITY_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VELOCITY_INTERVAL add constraint
+SSVI_OUOM_FK4 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_VESSEL add constraint
+SSV_OUOM_FK foreign key (OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SEIS_WELL add constraint
+SSW_OUOM_FK foreign key (CHECKSHOT_VELOCITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_AIRCRAFT add constraint
+SFAC_OUOM_FK foreign key (LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_AIRSTRIP add constraint
+SFAS_OUOM_FK foreign key (LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_BRIDGE add constraint
+SFB_OUOM_FK foreign key (BRIDGE_CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_BRIDGE add constraint
+SFB_OUOM_FK1 foreign key (BRIDGE_HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_BRIDGE add constraint
+SFB_OUOM_FK2 foreign key (BRIDGE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_BRIDGE add constraint
+SFB_OUOM_FK3 foreign key (BRIDGE_WIDTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DESCRIPTION add constraint
+SFDE_OUOM_FK foreign key (COST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DESCRIPTION add constraint
+SFDE_OUOM_FK1 foreign key (DESC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DESCRIPTION add constraint
+SFDE_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DESCRIPTION add constraint
+SFDE_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DISPOSAL add constraint
+SFDDI_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DISPOSAL add constraint
+SFDDI_OUOM_FK1 foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DOCK add constraint
+SFD_OUOM_FK foreign key (DOCK_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_DOCK add constraint
+SFD_OUOM_FK1 foreign key (WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_HABITAT add constraint
+SFH_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_HABITAT add constraint
+SFH_OUOM_FK1 foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_LANDING add constraint
+SFL_OUOM_FK foreign key (ALTITUDE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_LANDING add constraint
+SFL_OUOM_FK1 foreign key (MAX_ALLOW_MASS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_LANDING add constraint
+SFL_OUOM_FK2 foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_MONUMENT add constraint
+SFMO_OUOM_FK foreign key (MONUMENT_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_OTHER add constraint
+SFO_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_OTHER add constraint
+SFO_OUOM_FK1 foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_OTHER add constraint
+SFO_OUOM_FK2 foreign key (LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_OTHER add constraint
+SFO_OUOM_FK3 foreign key (WIDTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_OTHER add constraint
+SFO_OUOM_FK4 foreign key (HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_PLATFORM add constraint
+SFPL_OUOM_FK foreign key (WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_PORT add constraint
+SFPT_OUOM_FK foreign key (AREA_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_PORT add constraint
+SFPT_OUOM_FK1 foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_PORT add constraint
+SFPT_OUOM_FK2 foreign key (MIN_WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RAILWAY add constraint
+SFRR_OUOM_FK foreign key (RAIL_GAUGE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK foreign key (ROTARY_TABLE_CAP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK1 foreign key (ROTARY_TABLE_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK2 foreign key (SUBSTRUCT_SETBACK_CAP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK3 foreign key (TOP_DRIVE_RATING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK4 foreign key (WORKING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK5 foreign key (MUD_TANK_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK6 foreign key (MAX_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK7 foreign key (MAST_HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK8 foreign key (KB_GROUND_DIST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK9 foreign key (HOOK_LOAD_CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK10 foreign key (HOOKBLOCK_RATING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK11 foreign key (CLEAR_WORK_HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK12 foreign key (CHOKE_MANIFOLD_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK13 foreign key (CHOKE_MANIFOLD_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK14 foreign key (BOILER_POWER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK15 foreign key (WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK16 foreign key (SWIVEL_RATING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG add constraint
+SFRIG_OUOM_FK17 foreign key (SUBSTRUCT_CASING_CAP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_BOP add constraint
+SFRB_OUOM_FK foreign key (BOP_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_BOP add constraint
+SFRB_OUOM_FK1 foreign key (BOP_PRESSURE_RATING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_BOP add constraint
+SFRB_OUOM_FK2 foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_GENERATOR add constraint
+SFRG_OUOM_FK foreign key (POWER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_GENERATOR add constraint
+SFRG_OUOM_FK1 foreign key (POWER_RATING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_OVERHEAD_EQUIP add constraint
+SFROE_OUOM_FK foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_OVERHEAD_EQUIP add constraint
+SFROE_OUOM_FK1 foreign key (INSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_PUMP add constraint
+SFRP_OUOM_FK foreign key (PUMP_HP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_PUMP add constraint
+SFRP_OUOM_FK1 foreign key (PUMP_RATING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_SHAKER add constraint
+SFRS_OUOM_FK foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_RIG_SHAKER add constraint
+SFRS_OUOM_FK1 foreign key (SHAKER_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_ROAD add constraint
+SFR_OUOM_FK foreign key (ROAD_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_ROAD add constraint
+SFR_OUOM_FK1 foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_ROAD add constraint
+SFR_OUOM_FK2 foreign key (ROAD_WIDTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_VEHICLE add constraint
+SFVH_OUOM_FK foreign key (ENGINE_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_WASTE add constraint
+SFW_OUOM_FK foreign key (CAPACITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_WASTE_DISPOSAL add constraint
+SFWD_OUOM_FK foreign key (AMOUNT_ADJUSTMENT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_WASTE_DISPOSAL add constraint
+SFWD_OUOM_FK1 foreign key (AMOUNT_SHIPPED_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_WASTE_DISPOSAL add constraint
+SFWD_OUOM_FK2 foreign key (AMOUNT_RECEIVED_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_XREF add constraint
+SFX_OUOM_FK foreign key (FROM_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SF_XREF add constraint
+SFX_OUOM_FK1 foreign key (TO_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SPACING_UNIT add constraint
+SU_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SPATIAL_DESCRIPTION add constraint
+SPD_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY add constraint
+SPB_OUOM_FK foreign key (DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY add constraint
+SPB_OUOM_FK1 foreign key (ELEVATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK foreign key (MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK1 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK2 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK3 foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK4 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK5 foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK6 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_OUOM_FK7 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_DESC_XREF add constraint
+SPDX_OUOM_FK foreign key (OVERLAP_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE add constraint
+SPLN_OUOM_FK foreign key (DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT add constraint
+SPLP_OUOM_FK foreign key (DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT add constraint
+SPLP_OUOM_FK1 foreign key (ELEVATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK1 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK2 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK3 foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK4 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK5 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK6 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_OUOM_FK7 foreign key (MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_PARCEL add constraint
+SPP_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_PARCEL_LOT add constraint
+SPL_OUOM_FK foreign key (GROSS_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_PARCEL_M_B add constraint
+SPMB_OUOM_FK foreign key (EW_DIRECTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_PARCEL_M_B add constraint
+SPMB_OUOM_FK1 foreign key (NS_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT add constraint
+SPPT_OUOM_FK foreign key (MEASURED_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT add constraint
+SPPT_OUOM_FK1 foreign key (ELEVATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT add constraint
+SPPT_OUOM_FK2 foreign key (DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK1 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK2 foreign key (MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK3 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK4 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK5 foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK6 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POINT_VERSION add constraint
+SPPV_OUOM_FK7 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_POLYGON add constraint
+SPPOL_OUOM_FK foreign key (DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_ZONE_DEFINITION add constraint
+SPZD_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_ZONE_DEFINITION add constraint
+SPZD_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_ZONE_SUBSTANCE add constraint
+SPZS_OUOM_FK foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table SP_ZONE_SUBSTANCE add constraint
+SPZS_OUOM_FK1 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_FIELD_NODE add constraint
+STFN_OUOM_FK foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_FIELD_SECTION add constraint
+STFS_OUOM_FK foreign key (STRAT_UNIT_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK1 foreign key (MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK2 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK3 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK4 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK5 foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK6 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_NODE_VERSION add constraint
+STNV_OUOM_FK7 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_UNIT_DESCRIPTION add constraint
+STUD_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_UNIT_DESCRIPTION add constraint
+STUD_OUOM_FK1 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_UNIT_DESCRIPTION add constraint
+STUD_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table STRAT_WELL_SECTION add constraint
+STWS_OUOM_FK foreign key (PICK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK foreign key (WATER_ACOUSTIC_VEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK1 foreign key (DEPTH_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK2 foreign key (DRILL_TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK3 foreign key (GROUND_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK4 foreign key (ROTARY_TABLE_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK5 foreign key (PLUGBACK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK6 foreign key (NET_PAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK7 foreign key (MAX_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK8 foreign key (LOG_TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK9 foreign key (KB_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK10 foreign key (FINAL_TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK11 foreign key (DERRICK_FLOOR_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK12 foreign key (DEEPEST_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK13 foreign key (WHIPSTOCK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK14 foreign key (CASING_FLANGE_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK15 foreign key (CONFIDENTIAL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL add constraint
+W_OUOM_FK16 foreign key (WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK foreign key (ACTIVITY_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK1 foreign key (TOTAL_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK3 foreign key (START_MUD_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK4 foreign key (START_MUD_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK5 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK6 foreign key (LOST_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK7 foreign key (LOST_MATERIAL_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK8 foreign key (FINAL_MUD_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK9 foreign key (FINAL_MUD_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK10 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK11 foreign key (EVENT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY add constraint
+WAC_OUOM_FK12 foreign key (CONTROL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ACTIVITY_DURATION add constraint
+WADU_OUOM_FK foreign key (ACTIVITY_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL add constraint
+WAD_OUOM_FK foreign key (MAX_COMPRESSOR_CAP_VOL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_INTERVAL add constraint
+WADI_OUOM_FK foreign key (WATER_INFLUX_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_INTERVAL add constraint
+WADI_OUOM_FK1 foreign key (COMPRESSOR_RATE_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_INTERVAL add constraint
+WADI_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_INTERVAL add constraint
+WADI_OUOM_FK3 foreign key (MAX_INTERVAL_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_INTERVAL add constraint
+WADI_OUOM_FK4 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_PERIOD add constraint
+WADP_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_AIR_DRILL_PERIOD add constraint
+WADP_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CEMENT add constraint
+WCE_OUOM_FK foreign key (CEMENT_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CEMENT add constraint
+WCE_OUOM_FK1 foreign key (PERFORATION_BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CEMENT add constraint
+WCE_OUOM_FK2 foreign key (PERFORATION_TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_COMPLETION add constraint
+WCO_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_COMPLETION add constraint
+WCO_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE add constraint
+WCR_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE add constraint
+WCR_OUOM_FK1 foreign key (RECOVERED_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE add constraint
+WCR_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE add constraint
+WCR_OUOM_FK3 foreign key (CORE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE add constraint
+WCR_OUOM_FK4 foreign key (CORE_BARREL_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_ANALYSIS add constraint
+WCRA_OUOM_FK foreign key (SAMPLE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_ANALYSIS add constraint
+WCRA_OUOM_FK1 foreign key (SAMPLE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_ANAL_METHOD add constraint
+WCRAM_OUOM_FK foreign key (DRYING_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_ANAL_METHOD add constraint
+WCRAM_OUOM_FK1 foreign key (EXTRACT_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_ANAL_METHOD add constraint
+WCRAM_OUOM_FK2 foreign key (DRYING_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_DESCRIPTION add constraint
+WCRD_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_DESCRIPTION add constraint
+WCRD_OUOM_FK1 foreign key (INTERVAL_THICKNESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_DESCRIPTION add constraint
+WCRD_OUOM_FK2 foreign key (POROSITY_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_DESCRIPTION add constraint
+WCRD_OUOM_FK3 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_DESCRIPTION add constraint
+WCRD_OUOM_FK4 foreign key (SHOW_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK foreign key (BULK_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK1 foreign key (BULK_MASS_WATER_SAT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK2 foreign key (CONFINE_PERM_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK3 foreign key (BULK_MASS_SAND_SAT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK4 foreign key (BULK_MASS_OIL_SAT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK5 foreign key (CONFINE_POR_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK6 foreign key (GRAIN_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK7 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK8 foreign key (KVERT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK9 foreign key (KMAX_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK10 foreign key (K90_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK11 foreign key (INTERVAL_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK12 foreign key (INTERVAL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK13 foreign key (GRAIN_MASS_WATER_SAT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK14 foreign key (GRAIN_MASS_OIL_SAT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_OUOM_FK15 foreign key (CONFINE_SAT_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_DESC add constraint
+WCRSD_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_DESC add constraint
+WCRSD_OUOM_FK1 foreign key (POROSITY_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_DESC add constraint
+WCRSD_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_DESC add constraint
+WCRSD_OUOM_FK3 foreign key (SHOW_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SAMPLE_DESC add constraint
+WCRSD_OUOM_FK4 foreign key (RECOVERED_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SHIFT add constraint
+WCRS_OUOM_FK foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SHIFT add constraint
+WCRS_OUOM_FK1 foreign key (TOP_SHIFT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SHIFT add constraint
+WCRS_OUOM_FK2 foreign key (BASE_SHIFT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_SHIFT add constraint
+WCRS_OUOM_FK3 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_CORE_STRAT_UNIT add constraint
+WCRSU_OUOM_FK foreign key (CORE_STRAT_UNIT_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY add constraint
+WDS_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY add constraint
+WDS_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY add constraint
+WDS_OUOM_FK2 foreign key (REPORT_LOG_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY add constraint
+WDS_OUOM_FK3 foreign key (REPORT_PERM_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK foreign key (STATION_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK1 foreign key (VERTICAL_SECTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK2 foreign key (STATION_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK3 foreign key (INCLINATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK4 foreign key (AZIMUTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK5 foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_OUOM_FK6 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ADD_INV add constraint
+WDAI_OUOM_FK foreign key (QUANTITY_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_OUOM_FK foreign key (COMPONENT_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_OUOM_FK1 foreign key (MAX_OUTSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_OUOM_FK2 foreign key (MIN_INSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_OUOM_FK3 foreign key (MAX_INSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_OUOM_FK4 foreign key (COMPONENT_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_OUOM_FK5 foreign key (MIN_OUTSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK foreign key (AVG_FORCE_ON_BIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK1 foreign key (BIT_OPERATING_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK2 foreign key (BIT_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK3 foreign key (BIT_DRILLED_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK4 foreign key (AVG_PENETRATION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK5 foreign key (DISTANCE_DRILLED_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK6 foreign key (GAGE_OUT_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK7 foreign key (TORQUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK8 foreign key (RUN_OUT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK9 foreign key (RUN_IN_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK10 foreign key (REPORTED_TFA_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK11 foreign key (MIN_PENETRATION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK12 foreign key (MIN_FORCE_ON_BIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK13 foreign key (MAX_PENETRATION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK14 foreign key (MAX_FORCE_ON_BIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_OUOM_FK15 foreign key (FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_JET add constraint
+WDBJ_OUOM_FK foreign key (JET_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK foreign key (AVG_FORCE_ON_BIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK1 foreign key (FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK2 foreign key (MAX_PENETRATION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK3 foreign key (MIN_PENETRATION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK4 foreign key (TORQUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK5 foreign key (TOTAL_PERIOD_RUN_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK6 foreign key (TOTAL_DRILLED_DIST_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK7 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK8 foreign key (MIN_FORCE_ON_BIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK9 foreign key (MAX_FORCE_ON_BIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK10 foreign key (BIT_OPERATING_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK11 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_OUOM_FK12 foreign key (AVG_PENETRATION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_CHECK add constraint
+WDCK_OUOM_FK foreign key (DEFICIENT_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_EQUIPMENT add constraint
+WDE_OUOM_FK foreign key (PERIOD_ON_WELL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_INT_DETAIL add constraint
+WDID_OUOM_FK foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_INT_DETAIL add constraint
+WDID_OUOM_FK1 foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_INT_DETAIL add constraint
+WDID_OUOM_FK2 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_INT_DETAIL add constraint
+WDID_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_INT_DETAIL add constraint
+WDID_OUOM_FK4 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_ADDITIVE add constraint
+WDMA_OUOM_FK foreign key (ADDITIVE_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_ADDITIVE add constraint
+WDMA_OUOM_FK1 foreign key (QUANTITY_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_INTRVL add constraint
+WDMI_OUOM_FK foreign key (CASING_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_INTRVL add constraint
+WDMI_OUOM_FK1 foreign key (MUD_START_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_INTRVL add constraint
+WDMI_OUOM_FK2 foreign key (MUD_END_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_INTRVL add constraint
+WDMI_OUOM_FK3 foreign key (MAX_MUD_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_INTRVL add constraint
+WDMI_OUOM_FK4 foreign key (MAX_WEIGHT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_WEIGHT add constraint
+WDMW_OUOM_FK foreign key (MUD_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_WEIGHT add constraint
+WDMW_OUOM_FK1 foreign key (MUD_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_MUD_WEIGHT add constraint
+WDMW_OUOM_FK2 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK foreign key (BHA_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK1 foreign key (BOILER_FUEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK2 foreign key (CIRC_PRESSURE_MAX_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK3 foreign key (KB_DOWN_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK4 foreign key (HOOKLOAD_MAX_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK5 foreign key (HOLE_FILL_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK6 foreign key (HOLE_DRAG_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK7 foreign key (DRILL_STRING_TORQUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK8 foreign key (DRILL_PIPE_STAND_LEN_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK9 foreign key (DRILL_PIPE_SINGLE_LEN_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK10 foreign key (CIRC_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK11 foreign key (CIRC_PRESSURE_MIN_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK12 foreign key (TOT_DRILL_TOOL_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK13 foreign key (TOT_DRILL_TOOL_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK14 foreign key (RIG_FUEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK15 foreign key (REPORTED_KB_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK16 foreign key (OPERATOR_FUEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD add constraint
+WDP_OUOM_FK17 foreign key (CASING_PRESS_MAX_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK foreign key (REDUCED_PUMP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK1 foreign key (UNDERFLOW_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK2 foreign key (REDUCED_PUMP_STROKE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK3 foreign key (PUMP_STROKE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK4 foreign key (PUMP_LINER_INSIDE_DIAM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK5 foreign key (OVERFLOW_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK6 foreign key (INTAKE_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK7 foreign key (BOOKED_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK8 foreign key (AVG_PUMP_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK9 foreign key (AVG_BOILER_STACK_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_OUOM_FK10 foreign key (REDUCED_PUMP_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_INV add constraint
+WDPIN_OUOM_FK foreign key (QUANTITY_ON_HAND_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_INV add constraint
+WDPIN_OUOM_FK1 foreign key (QUANTITY_ORDERED_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_SERV add constraint
+WDPS_OUOM_FK foreign key (METRIC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PERIOD_VESSEL add constraint
+WDPV_OUOM_FK foreign key (RISER_TENSION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PIPE_INV add constraint
+WDPI_OUOM_FK foreign key (LINEAR_MASS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PIPE_INV add constraint
+WDPI_OUOM_FK1 foreign key (MAX_OUTSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PIPE_INV add constraint
+WDPI_OUOM_FK2 foreign key (MIN_INSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_PIPE_INV add constraint
+WDPI_OUOM_FK3 foreign key (MAX_JOINT_OUTSIDE_DIAM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_REMARK add constraint
+WDRK_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_REMARK add constraint
+WDRK_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_STATISTIC add constraint
+WDSTAT_OUOM_FK foreign key (STATISTIC_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_STATISTIC add constraint
+WDSTAT_OUOM_FK1 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_STATISTIC add constraint
+WDSTAT_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_DRILL_WEATHER add constraint
+WDW_OUOM_FK foreign key (TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_EQUIPMENT add constraint
+WEQ_OUOM_FK foreign key (INSTALL_BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_EQUIPMENT add constraint
+WEQ_OUOM_FK1 foreign key (INSTALL_TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL add constraint
+WHD_OUOM_FK foreign key (BUILDUP_RATE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL add constraint
+WHD_OUOM_FK1 foreign key (HORIZ_DISPLACEMENT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL add constraint
+WHD_OUOM_FK2 foreign key (RAT_HOLE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL add constraint
+WHD_OUOM_FK3 foreign key (WB_LENGTH_IN_FORM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL add constraint
+WHD_OUOM_FK4 foreign key (PAY_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL add constraint
+WHD_OUOM_FK5 foreign key (LATERAL_HOLE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_KOP add constraint
+WHDK_OUOM_FK foreign key (KICKOFF_POINT_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_KOP add constraint
+WHDK_OUOM_FK1 foreign key (KICKOFF_POINT_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_POE add constraint
+WHDP_OUOM_FK foreign key (POINT_OF_ENTRY_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_POE add constraint
+WHDP_OUOM_FK1 foreign key (POINT_OF_ENTRY_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_SPOKE add constraint
+WHDS_OUOM_FK foreign key (SPOKE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_SPOKE add constraint
+WHDS_OUOM_FK1 foreign key (SPOKE_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_HORIZ_DRILL_SPOKE add constraint
+WHDS_OUOM_FK2 foreign key (SPOKE_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LICENSE add constraint
+WLIC_OUOM_FK foreign key (DIRECTION_TO_LOC_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LICENSE add constraint
+WLIC_OUOM_FK1 foreign key (DISTANCE_TO_LOC_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LICENSE add constraint
+WLIC_OUOM_FK2 foreign key (PROJECTED_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LICENSE add constraint
+WLIC_OUOM_FK3 foreign key (PROJECTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LICENSE add constraint
+WLIC_OUOM_FK4 foreign key (RIG_SUBSTR_HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LICENSE_COND add constraint
+WLICC_OUOM_FK foreign key (CONDITION_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG add constraint
+WL_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG add constraint
+WL_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_AXIS_COORD add constraint
+WLAC_OUOM_FK foreign key (AXIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE add constraint
+WLC_OUOM_FK foreign key (INDEX_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE add constraint
+WLC_OUOM_FK1 foreign key (CURVE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_AXIS add constraint
+WLCA_OUOM_FK foreign key (AXIS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_AXIS add constraint
+WLCA_OUOM_FK1 foreign key (SPACING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_FRAME add constraint
+WLCF_OUOM_FK foreign key (DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_FRAME add constraint
+WLCF_OUOM_FK1 foreign key (INDEX_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_FRAME add constraint
+WLCF_OUOM_FK2 foreign key (FRAME_SPACING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_SCALE add constraint
+WLCS_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_SCALE add constraint
+WLCS_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_CURVE_SCALE add constraint
+WLCS_OUOM_FK2 foreign key (TRACK_WIDTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_DGTZ_CURVE add constraint
+WLDC_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_DGTZ_CURVE add constraint
+WLDC_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_DGTZ_CURVE add constraint
+WLDC_OUOM_FK2 foreign key (DEPTH_INCREMENT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_JOB add constraint
+WLJ_OUOM_FK foreign key (CASING_SHOE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_JOB add constraint
+WLJ_OUOM_FK1 foreign key (DRILLING_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_PARM add constraint
+WLP_OUOM_FK foreign key (PARAMETER_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_PARM_ARRAY add constraint
+WLPA_OUOM_FK foreign key (PARAMETER_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_PASS add constraint
+WLPS_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_PASS add constraint
+WLPS_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK1 foreign key (MAX_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK2 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK3 foreign key (REPORT_PERM_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK4 foreign key (TUBING_BOTTOM_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK5 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK6 foreign key (REPORT_LOG_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_LOG_TRIP add constraint
+WLT_OUOM_FK7 foreign key (MAX_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MISC_DATA add constraint
+WMD_OUOM_FK foreign key (CURRENCY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MISC_DATA add constraint
+WMD_OUOM_FK1 foreign key (DATA_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MISC_DATA add constraint
+WMD_OUOM_FK2 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MISC_DATA add constraint
+WMD_OUOM_FK3 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MISC_DATA add constraint
+WMD_OUOM_FK4 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_PROPERTY add constraint
+WMP_OUOM_FK foreign key (AVERAGE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_PROPERTY add constraint
+WMP_OUOM_FK1 foreign key (REFERENCE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_PROPERTY add constraint
+WMP_OUOM_FK2 foreign key (MAX_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_PROPERTY add constraint
+WMP_OUOM_FK3 foreign key (MIN_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_RESISTIVITY add constraint
+WMR_OUOM_FK foreign key (MUD_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_RESISTIVITY add constraint
+WMR_OUOM_FK1 foreign key (RESISTIVITY_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_SAMPLE add constraint
+WMS_OUOM_FK foreign key (FLUID_FLOW_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_SAMPLE add constraint
+WMS_OUOM_FK1 foreign key (FLUID_LOSS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_SAMPLE add constraint
+WMS_OUOM_FK2 foreign key (MUD_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_SAMPLE add constraint
+WMS_OUOM_FK3 foreign key (SAMPLE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_SAMPLE add constraint
+WMS_OUOM_FK4 foreign key (TIME_SINCE_CIRC_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_MUD_SAMPLE add constraint
+WMS_OUOM_FK5 foreign key (MUD_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_M_B add constraint
+WNMB_OUOM_FK foreign key (EW_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_M_B add constraint
+WNMB_OUOM_FK1 foreign key (NS_DISTANCE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_STRAT_UNIT add constraint
+WNSU_OUOM_FK foreign key (BASE_OFFSET_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_STRAT_UNIT add constraint
+WNSU_OUOM_FK1 foreign key (PICK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_STRAT_UNIT add constraint
+WNSU_OUOM_FK2 foreign key (TOP_OFFSET_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK foreign key (EASTING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK1 foreign key (POLAR_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK2 foreign key (NORTHING_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK3 foreign key (ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK4 foreign key (MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK5 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK6 foreign key (Y_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_NODE_VERSION add constraint
+WNV_OUOM_FK7 foreign key (X_OFFSET_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK1 foreign key (NET_PAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK2 foreign key (GROSS_PAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK3 foreign key (GAS_WTR_CONTACT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK4 foreign key (GAS_OIL_CONTACT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK5 foreign key (OIL_WTR_CONTACT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PAYZONE add constraint
+WP_OUOM_FK6 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PERFORATION add constraint
+WPRF_OUOM_FK foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PERFORATION add constraint
+WPRF_OUOM_FK1 foreign key (PERFORATION_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PERFORATION add constraint
+WPRF_OUOM_FK2 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PLUGBACK add constraint
+WPL_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PLUGBACK add constraint
+WPL_OUOM_FK1 foreign key (CEMENT_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PLUGBACK add constraint
+WPL_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PLUGBACK add constraint
+WPL_OUOM_FK3 foreign key (TOP_FOUND_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK2 foreign key (TOP_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK3 foreign key (NET_THICKNESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK4 foreign key (BASE_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK5 foreign key (CORE_SAMPLE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_OUOM_FK6 foreign key (GROSS_THICKNESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK1 foreign key (POOL_DATUM_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK2 foreign key (SHUTIN_TUBING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK3 foreign key (WELL_DATUM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK4 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK5 foreign key (SHUTIN_CASING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK6 foreign key (INIT_RESERVOIR_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK7 foreign key (FLOW_CASING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE add constraint
+WPSR_OUOM_FK8 foreign key (FLOW_TUBING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK foreign key (AOF_POTENTIAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK1 foreign key (FOUR_POINT_CAOF_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK2 foreign key (RESERVOIR_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK3 foreign key (FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK4 foreign key (CAOF_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK5 foreign key (FLOW_PERIOD_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF add constraint
+WPA_OUOM_FK6 foreign key (FLOW_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK foreign key (BHFP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK1 foreign key (FLOW_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK2 foreign key (WATER_FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK3 foreign key (FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK4 foreign key (FLOW_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK5 foreign key (CONDENSATE_FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_OUOM_FK6 foreign key (FINAL_SHUTIN_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK foreign key (RECORDER_DATUM_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK1 foreign key (TEST_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK2 foreign key (WELL_HEAD_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK3 foreign key (PRESSURE_GRADIENT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK4 foreign key (PACKER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK5 foreign key (DATUM_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK6 foreign key (BHFP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK7 foreign key (SHUTIN_PERIOD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK8 foreign key (REPORTED_RUN_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK9 foreign key (RUN_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_PRESSURE_BH add constraint
+WPB_OUOM_FK10 foreign key (RUN_DEPTH_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SHOW add constraint
+WS_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SHOW add constraint
+WS_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SIEVE_ANALYSIS add constraint
+WSA_OUOM_FK foreign key (INTERVAL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SIEVE_ANALYSIS add constraint
+WSA_OUOM_FK1 foreign key (INTERVAL_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SIEVE_ANALYSIS add constraint
+WSA_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SIEVE_ANALYSIS add constraint
+WSA_OUOM_FK3 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_STATUS add constraint
+WST_OUOM_FK foreign key (STATUS_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SUPPORT_FACILITY add constraint
+WSF_OUOM_FK foreign key (DEPTH_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SUPPORT_FACILITY add constraint
+WSF_OUOM_FK1 foreign key (DERRICK_FLOOR_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SUPPORT_FACILITY add constraint
+WSF_OUOM_FK2 foreign key (ROTARY_TABLE_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_SUPPORT_FACILITY add constraint
+WSF_OUOM_FK3 foreign key (KB_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK foreign key (STATIC_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK2 foreign key (WATER_FLOW_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK3 foreign key (RAT_HOLE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK4 foreign key (RAT_HOLE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK5 foreign key (OIL_FLOW_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK6 foreign key (MAX_WATER_FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK7 foreign key (MAX_OIL_FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK8 foreign key (MAX_HYDROSTATIC_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK9 foreign key (MAX_GAS_FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK10 foreign key (MAX_CONDENS_FLOW_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK11 foreign key (GOR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK12 foreign key (REPORT_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK13 foreign key (GAS_FLOW_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK14 foreign key (FLOW_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK15 foreign key (FLOW_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK16 foreign key (CONDENSATE_RATIO_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK17 foreign key (CONDENSATE_FLOW_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK18 foreign key (CASING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK19 foreign key (CALIPER_HOLE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK20 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK21 foreign key (TEST_HOLE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK22 foreign key (TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK23 foreign key (TEMPERATURE_CORRECTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST add constraint
+WT_OUOM_FK24 foreign key (TEST_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK foreign key (CONDENSATE_RATIO_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK1 foreign key (LGR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK2 foreign key (OIL_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK3 foreign key (WATER_SALINITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK4 foreign key (WATER_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK5 foreign key (WATER_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK6 foreign key (OIL_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK7 foreign key (GWR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK8 foreign key (CONDENSATE_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_OUOM_FK9 foreign key (GOR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK foreign key (COMPUTED_PERMEABILITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK1 foreign key (MAX_RESERVOIR_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK2 foreign key (PRODUCTION_INDEX_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK3 foreign key (POTMTRC_SURF_HEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK4 foreign key (INVESTIGATION_RADIUS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK5 foreign key (CONFIDENCE_LIMIT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK6 foreign key (FINAL_RESERVOIR_PRESS_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_OUOM_FK7 foreign key (GAUGE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_CUSHION add constraint
+WTCU_OUOM_FK foreign key (CUSHION_GAS_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_CUSHION add constraint
+WTCU_OUOM_FK1 foreign key (CUSHION_INHIBITOR_VOL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_CUSHION add constraint
+WTCU_OUOM_FK2 foreign key (CUSHION_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_CUSHION add constraint
+WTCU_OUOM_FK3 foreign key (CUSHION_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_EQUIPMENT add constraint
+WTE_OUOM_FK foreign key (EQUIP_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_EQUIPMENT add constraint
+WTE_OUOM_FK1 foreign key (EQUIP_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_EQUIPMENT add constraint
+WTE_OUOM_FK2 foreign key (OUTSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_EQUIPMENT add constraint
+WTE_OUOM_FK3 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_EQUIPMENT add constraint
+WTE_OUOM_FK4 foreign key (INSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW add constraint
+WTF_OUOM_FK foreign key (GAS_RISER_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW add constraint
+WTF_OUOM_FK1 foreign key (MAX_FLUID_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW add constraint
+WTF_OUOM_FK2 foreign key (MAX_SURFACE_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW add constraint
+WTF_OUOM_FK3 foreign key (TTS_ELAPSED_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW_MEAS add constraint
+WTFM_OUOM_FK foreign key (FLOW_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW_MEAS add constraint
+WTFM_OUOM_FK1 foreign key (MEASUREMENT_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW_MEAS add constraint
+WTFM_OUOM_FK2 foreign key (MEASUREMENT_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW_MEAS add constraint
+WTFM_OUOM_FK3 foreign key (MEASUREMENT_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_FLOW_MEAS add constraint
+WTFM_OUOM_FK4 foreign key (SURFACE_CHOKE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK foreign key (FILTRATE_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK1 foreign key (MUD_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK2 foreign key (MUD_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK3 foreign key (MUD_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK4 foreign key (MUD_SALINITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK5 foreign key (MUD_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK6 foreign key (FILTRATE_SALINITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_MUD add constraint
+WTM_OUOM_FK7 foreign key (FILTRATE_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PERIOD add constraint
+WTP_OUOM_FK foreign key (TUBING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PERIOD add constraint
+WTP_OUOM_FK1 foreign key (CASING_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PERIOD add constraint
+WTP_OUOM_FK2 foreign key (PERIOD_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PRESSURE add constraint
+WTPSR_OUOM_FK foreign key (END_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PRESSURE add constraint
+WTPSR_OUOM_FK1 foreign key (START_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PRESS_MEAS add constraint
+WTPM_OUOM_FK foreign key (MEASUREMENT_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PRESS_MEAS add constraint
+WTPM_OUOM_FK1 foreign key (MEASUREMENT_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_PRESS_MEAS add constraint
+WTPM_OUOM_FK2 foreign key (MEASUREMENT_TIME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECORDER add constraint
+WTR_OUOM_FK foreign key (MAX_CAPACITY_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECORDER add constraint
+WTR_OUOM_FK1 foreign key (MAX_CAPACITY_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECORDER add constraint
+WTR_OUOM_FK2 foreign key (RECORDER_MIN_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECORDER add constraint
+WTR_OUOM_FK3 foreign key (RECORDER_RESOLUTION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECORDER add constraint
+WTR_OUOM_FK4 foreign key (RECORDER_MAX_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECORDER add constraint
+WTR_OUOM_FK5 foreign key (RECORDER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_RECOVERY add constraint
+WTRCV_OUOM_FK foreign key (RECOVERY_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_SHUTOFF add constraint
+WTS_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_SHUTOFF add constraint
+WTS_OUOM_FK1 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TEST_SHUTOFF add constraint
+WTS_OUOM_FK2 foreign key (PLUGBACK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK1 foreign key (FORM_BREAK_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK2 foreign key (INJECTION_RATE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK3 foreign key (INSTANT_SI_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK4 foreign key (PROPPANT_AGENT_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK5 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK6 foreign key (TREATMENT_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TREATMENT add constraint
+WTRT_OUOM_FK7 foreign key (TREATMENT_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK1 foreign key (HOLE_SIZE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK2 foreign key (HUNG_TOP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK3 foreign key (TUBING_WEIGHT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK4 foreign key (TUBING_STRENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK5 foreign key (TUBING_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK6 foreign key (TORQUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK7 foreign key (SHOE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK8 foreign key (SEA_FLOOR_PENETRATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK9 foreign key (REPORTED_TOP_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK10 foreign key (REPORTED_BASE_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK11 foreign key (INSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK12 foreign key (LEFT_IN_HOLE_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK13 foreign key (OUTSIDE_DIAMETER_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK14 foreign key (PACKER_SET_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_TUBULAR add constraint
+WTUB_OUOM_FK15 foreign key (PULLED_LENGTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK foreign key (NET_PAY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK1 foreign key (MAX_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK2 foreign key (LOG_TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK3 foreign key (KB_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK4 foreign key (GROUND_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK5 foreign key (FINAL_TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK6 foreign key (DRILL_TD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK7 foreign key (DERRICK_FLOOR_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK8 foreign key (DEPTH_DATUM_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK9 foreign key (DEEPEST_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK10 foreign key (CONFIDENTIAL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK11 foreign key (CASING_FLANGE_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK12 foreign key (WHIPSTOCK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK13 foreign key (WATER_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK14 foreign key (PLUGBACK_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK15 foreign key (ROTARY_TABLE_ELEV_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_VERSION add constraint
+WV_OUOM_FK16 foreign key (WATER_ACOUSTIC_VEL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_OUOM_FK foreign key (TOP_DELTA_X_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_OUOM_FK1 foreign key (TOP_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_OUOM_FK2 foreign key (TOP_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_OUOM_FK3 foreign key (BASE_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_OUOM_FK4 foreign key (BASE_MD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_OUOM_FK5 foreign key (TOP_DELTA_Y_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WELL_ZONE_INTRVL_VALUE add constraint
+WZIV_OUOM_FK foreign key (ZONE_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WORK_ORDER_BA add constraint
+WOBA_OUOM_FK foreign key (PAYMENT_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WORK_ORDER_CONDITION add constraint
+WOC_OUOM_FK foreign key (PAYMENT_AMOUNT_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table WORK_ORDER_INSTRUCTION add constraint
+WOI_OUOM_FK foreign key (INSTRUCTION_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_GAS_ANAL_DETAIL add constraint
+Z_PDENGAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_ANALYSIS add constraint
+Z_PDENOA_OUOM_FK foreign key (GOR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_ANALYSIS add constraint
+Z_PDENOA_OUOM_FK1 foreign key (MEASURED_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_ANALYSIS add constraint
+Z_PDENOA_OUOM_FK2 foreign key (OIL_ANALYSIS_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_ANALYSIS add constraint
+Z_PDENOA_OUOM_FK3 foreign key (OIL_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_VISCOSITY add constraint
+Z_PDENOV_OUOM_FK foreign key (OIL_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_VISCOSITY add constraint
+Z_PDENOV_OUOM_FK1 foreign key (POUR_POINT_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_OIL_VISCOSITY add constraint
+Z_PDENOV_OUOM_FK2 foreign key (OIL_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_VOL_BY_DAY add constraint
+Z_PDENVBD_OUOM_FK foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_VOL_BY_DAY add constraint
+Z_PDENVBD_OUOM_FK1 foreign key (VOLUME_QUAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_VOL_BY_MONTH add constraint
+Z_PDENVBM_OUOM_FK foreign key (VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_VOL_BY_MONTH add constraint
+Z_PDENVBM_OUOM_FK1 foreign key (VOLUME_QUALITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_WATER_ANALYSIS add constraint
+Z_PDENWA_OUOM_FK foreign key (RESERVOIR_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_WATER_ANALYSIS add constraint
+Z_PDENWA_OUOM_FK1 foreign key (WATER_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_WATER_ANALYSIS add constraint
+Z_PDENWA_OUOM_FK2 foreign key (RW_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_WATER_ANALYSIS add constraint
+Z_PDENWA_OUOM_FK3 foreign key (WATER_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_WATER_ANALYSIS add constraint
+Z_PDENWA_OUOM_FK4 foreign key (WATER_SALINITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_PDEN_WATER_ANAL_DTL add constraint
+Z_PDENWAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_DRILL_STATUS add constraint
+Z_WDST_OUOM_FK foreign key (STATUS_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_EVENT add constraint
+Z_WEV_OUOM_FK foreign key (DOWNTIME_DURATION_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_EVENT add constraint
+Z_WEV_OUOM_FK1 foreign key (EVENT_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_EVENT add constraint
+Z_WEV_OUOM_FK2 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_GAS_ANALYSIS add constraint
+Z_WGA_OUOM_FK foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_GAS_ANALYSIS add constraint
+Z_WGA_OUOM_FK1 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_GAS_ANALYSIS add constraint
+Z_WGA_OUOM_FK2 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_GAS_ANAL_DETAIL add constraint
+Z_WGAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_OUOM_FK foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_OUOM_FK1 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_OUOM_FK2 foreign key (MEASURED_PRESSURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_OUOM_FK3 foreign key (OIL_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_OUOM_FK4 foreign key (OIL_ANALYSIS_TEMP_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_OUOM_FK5 foreign key (GOR_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_VISCOSITY add constraint
+Z_WOV_OUOM_FK foreign key (OIL_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_VISCOSITY add constraint
+Z_WOV_OUOM_FK1 foreign key (OIL_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_OIL_VISCOSITY add constraint
+Z_WOV_OUOM_FK2 foreign key (POUR_POINT_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK foreign key (WATER_FLOW_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK1 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK2 foreign key (MUD_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK3 foreign key (MUD_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK4 foreign key (LOST_VOLUME_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK5 foreign key (LOST_MATERIAL_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK6 foreign key (FINAL_MUD_VISCOSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK7 foreign key (FINAL_MUD_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK8 foreign key (CONTROL_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK9 foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_OUOM_FK10 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK foreign key (BASE_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK1 foreign key (REPORTED_TVD_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK2 foreign key (RESERVOIR_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK3 foreign key (RW_TEMPERATURE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK4 foreign key (TOP_DEPTH_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK5 foreign key (WATER_DENSITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK6 foreign key (WATER_RESISTIVITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_OUOM_FK7 foreign key (WATER_SALINITY_OUOM) references
+ppdm_unit_of_measure(UOM_ID);
+
+alter table Z_WELL_WATER_ANAL_DTL add constraint
+Z_WWAD_OUOM_FK foreign key (ANALYSIS_VALUE_OUOM) references
+ppdm_unit_of_measure(UOM_ID);

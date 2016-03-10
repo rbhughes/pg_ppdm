@@ -1,0 +1,26 @@
+\qecho 'CREATING UNIQUE INDEX A_UK'
+alter table AREA add constraint A_UK unique(AREA_NUMERIC_ID,AREA_ID,AREA_TYPE);
+
+\qecho 'CREATING UNIQUE INDEX RII_UK'
+alter table RM_INFORMATION_ITEM add constraint RII_UK unique(INFO_ITEM_NUMERIC_ID);
+
+\qecho 'CREATING UNIQUE INDEX SBG_UK'
+alter table SEIS_BIN_GRID add constraint SBG_UK unique(SEIS_BIN_NUMERIC_ID);
+
+\qecho 'CREATING UNIQUE INDEX SST_UK'
+alter table SEIS_SET add constraint SST_UK unique(NUMERIC_ID);
+
+\qecho 'CREATING UNIQUE INDEX M_UK'
+alter table SF_MONUMENT add constraint M_UK unique(MONUMENT_NUMERIC_ID,MONUMENT_ID);
+
+\qecho 'CREATING UNIQUE INDEX SFS_UK'
+alter table STRAT_FIELD_STATION add constraint SFS_UK unique(FIELD_STATION_NUMERIC_ID,FIELD_STATION_ID);
+
+\qecho 'CREATING UNIQUE INDEX WEL_UK'
+alter table WELL add constraint WEL_UK unique(WELL_NUMERIC_ID,UWI);
+
+\qecho 'CREATING UNIQUE INDEX WDS_UK'
+alter table WELL_DIR_SRVY add constraint WDS_UK unique(SURVEY_NUMERIC_ID,UWI,SURVEY_ID,SOURCE);
+
+\qecho 'CREATING UNIQUE INDEX WN_UK'
+alter table WELL_NODE add constraint WN_UK unique(NODE_NUMERIC_ID,NODE_ID);

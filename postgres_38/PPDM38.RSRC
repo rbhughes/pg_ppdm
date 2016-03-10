@@ -1,0 +1,5033 @@
+-- WARNING --
+-- Use of this data is subject to the Terms and Conditions outlined in the file PPDM_TermsAndConditions.txt
+-- By opening and accessing this information, you are agreeing to these Terms and Conditions.
+
+-- Copyright 2008, PPDM Association. All Rights Reserved --
+
+
+--  This Oracle DDL is for the PPDM38 model
+--  This is the PRODUCTION version
+
+
+--THIS FILE IS OPTIONAL IN CREATING THE PPDM38 MODEL--
+
+
+alter table APPLICATION add constraint
+APP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLICATION_COMPONENT add constraint
+APPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLIC_ALIAS add constraint
+APPAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLIC_AREA add constraint
+APPA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLIC_ATTACH add constraint
+APPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLIC_BA add constraint
+APPB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLIC_DESC add constraint
+APPD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table APPLIC_REMARK add constraint
+APPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table AREA add constraint
+A_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table AREA_ALIAS add constraint
+AA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table AREA_COMPONENT add constraint
+ACMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table AREA_CONTAIN add constraint
+AC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table AREA_DESCRIPTION add constraint
+AD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_ADDRESS add constraint
+BAA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_ALIAS add constraint
+BAAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_AUTHORITY add constraint
+BAAU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_AUTHORITY_COMP add constraint
+BAAUC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_COMPONENT add constraint
+BACOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_CONSORTIUM_SERVICE add constraint
+BACS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_CREW add constraint
+BAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_CREW_MEMBER add constraint
+BACM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_DESCRIPTION add constraint
+BAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_EMPLOYEE add constraint
+BAE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE add constraint
+BALIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_ALIAS add constraint
+BALICAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_AREA add constraint
+BALICA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_COND add constraint
+BALICC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_COND_CODE add constraint
+BALICCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_COND_TYPE add constraint
+BALICCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_REMARK add constraint
+BALICR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_STATUS add constraint
+BALICS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_TYPE add constraint
+BALICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_LICENSE_VIOLATION add constraint
+BALICF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_ORGANIZATION add constraint
+BAO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_ORGANIZATION_COMP add constraint
+BAOC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_PERMIT add constraint
+BAP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_PREFERENCE add constraint
+BAPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_PREFERENCE_LEVEL add constraint
+BAPRL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_SERVICE add constraint
+BAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_SERVICE_ADDRESS add constraint
+BASA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BA_XREF add constraint
+BAX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table BUSINESS_ASSOCIATE add constraint
+BA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_ADDITIVE add constraint
+CA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_ADDITIVE_ALIAS add constraint
+CAA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_ADDITIVE_SPEC add constraint
+CAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_ADDITIVE_TYPE add constraint
+CAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_ADDITIVE_XREF add constraint
+CAX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_EQUIPMENT add constraint
+CEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_EQUIP_ALIAS add constraint
+CEQA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CAT_EQUIP_SPEC add constraint
+CEQS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_LEVEL add constraint
+CLSL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_LEVEL_ALIAS add constraint
+CLSLAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_LEVEL_COMPONENT add constraint
+CLSLCOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_LEVEL_DESC add constraint
+CLSLD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_LEVEL_TYPE add constraint
+CLSLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_LEVEL_XREF add constraint
+CLSLX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_SYSTEM add constraint
+CLSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_SYSTEM_ALIAS add constraint
+CLSSAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CLASS_SYSTEM_XREF add constraint
+CLSSEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSENT add constraint
+CON_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSENT_BA add constraint
+CONB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSENT_COMPONENT add constraint
+CONCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSENT_COND add constraint
+CONC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSENT_REMARK add constraint
+CONR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT add constraint
+CO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_BA add constraint
+COB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_COMPONENT add constraint
+COCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_DISC add constraint
+COD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_DISC_BA add constraint
+CODB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_DISC_ISSUE add constraint
+CODI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_ISSUE add constraint
+COI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONSULT_XREF add constraint
+COX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONTEST add constraint
+COT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONTEST_COMPONENT add constraint
+COTCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONTEST_PARTY add constraint
+COTP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONTEST_REMARK add constraint
+COTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONTRACT add constraint
+C_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONTRACT_COMPONENT add constraint
+CCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_ACCOUNT_PROC add constraint
+CAP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_ALIAS add constraint
+CAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_ALLOW_EXPENSE add constraint
+CAE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_AREA add constraint
+CAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_BA add constraint
+CBA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_BA_SERVICE add constraint
+CBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_EXEMPTION add constraint
+CE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_EXTENSION add constraint
+CEX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_JURISDICTION add constraint
+CJ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_KEY_WORD add constraint
+CKW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_MKTG_ELECT_SUBST add constraint
+CMES_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_OPER_PROC add constraint
+COP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_PROVISION add constraint
+CP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_PROVISION_TEXT add constraint
+CPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_PROVISION_XREF add constraint
+CPX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_REMARK add constraint
+CR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_STATUS add constraint
+CST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_TYPE add constraint
+CT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_VOTING_PROC add constraint
+CVP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CONT_XREF add constraint
+CX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_ALIAS add constraint
+CSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_COORDINATE_SYSTEM add constraint
+CS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_COORD_ACQUISITION add constraint
+CSCA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_COORD_TRANSFORM add constraint
+CSCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_COORD_TRANS_PARM add constraint
+CSCTP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_COORD_TRANS_VALUE add constraint
+CSCTV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_ELLIPSOID add constraint
+CSE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_GEODETIC_DATUM add constraint
+CSGD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_PRIME_MERIDIAN add constraint
+CSPM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table CS_PRINCIPAL_MERIDIAN add constraint
+CSPME_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ECOZONE add constraint
+EZ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ECOZONE_ALIAS add constraint
+EZA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ECOZONE_HIERARCHY add constraint
+EZH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ECOZONE_SET add constraint
+EZS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ECOZONE_SET_PART add constraint
+EZSP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ECOZONE_XREF add constraint
+EZX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ENTITLEMENT add constraint
+ENT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ENT_COMPONENT add constraint
+ENTCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ENT_GROUP add constraint
+ENTG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ENT_SECURITY_BA add constraint
+ENTSB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ENT_SECURITY_GROUP add constraint
+ENTSG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ENT_SECURITY_GROUP_XREF add constraint
+ENTSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT add constraint
+EQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_ALIAS add constraint
+EQA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_BA add constraint
+EQBA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_COMPONENT add constraint
+EQCOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_MAINTAIN add constraint
+EQM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_MAINT_STATUS add constraint
+EQMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_MAINT_TYPE add constraint
+EQMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_SPEC add constraint
+EQS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_SPEC_SET add constraint
+EQSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_SPEC_SET_SPEC add constraint
+EQSSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_STATUS add constraint
+EQST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_USE_STAT add constraint
+EQUS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table EQUIPMENT_XREF add constraint
+EQX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY add constraint
+FAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_ALIAS add constraint
+FACA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_AREA add constraint
+FACAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_BA_SERVICE add constraint
+FACBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_CLASS add constraint
+FACC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_COMPONENT add constraint
+FACCMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_DESCRIPTION add constraint
+FACD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_EQUIPMENT add constraint
+FACEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_FIELD add constraint
+FACF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LICENSE add constraint
+FACL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_ALIAS add constraint
+FACLAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_AREA add constraint
+FACLA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_COND add constraint
+FACLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_REMARK add constraint
+FACLR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_STATUS add constraint
+FACLS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_TYPE add constraint
+FACLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_LIC_VIOLATION add constraint
+FACLV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_MAINTAIN add constraint
+FACM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_MAINT_STATUS add constraint
+FACMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_RATE add constraint
+FACRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_RESTRICTION add constraint
+FACR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_STATUS add constraint
+FACS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_SUBSTANCE add constraint
+FACSU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_VERSION add constraint
+FACV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FACILITY_XREF add constraint
+FACX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIELD add constraint
+FLD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIELD_ALIAS add constraint
+FLDA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIELD_AREA add constraint
+FLDAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIELD_COMPONENT add constraint
+FLDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIELD_INSTRUMENT add constraint
+FLDI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIELD_VERSION add constraint
+FLDV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FINANCE add constraint
+FIN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIN_COMPONENT add constraint
+FINC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIN_COST_SUMMARY add constraint
+FINCS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FIN_XREF add constraint
+FINX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL add constraint
+FOS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_AGE add constraint
+FOSAG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_ASSEMBLAGE add constraint
+FOSAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_DESC add constraint
+FOSD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_DOCUMENT add constraint
+FOSDO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_EQUIVALENCE add constraint
+FOSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_NAME_SET add constraint
+FOSNS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_NAME_SET_FOSSIL add constraint
+FOSNSF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_TAXON_ALIAS add constraint
+FOSAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_TAXON_HIER add constraint
+FOSTH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_TAXON_LEAF add constraint
+FOSTL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table FOSSIL_XREF add constraint
+FOSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT add constraint
+HI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_BA add constraint
+HIB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_CAUSE add constraint
+HIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_CLASS add constraint
+HICL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_CLASS_ALIAS add constraint
+HICA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_COMPONENT add constraint
+HICOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_DETAIL add constraint
+HID_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_EQUIP add constraint
+HIE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_EQUIV add constraint
+HIEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_INTERACTION add constraint
+HII_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_REMARK add constraint
+HIRK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_RESPONSE add constraint
+HIRE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_SET add constraint
+HIS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_SEVERITY add constraint
+HISV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_SEV_ALIAS add constraint
+HISA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_SUBSTANCE add constraint
+HISU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_TYPE add constraint
+HIT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_TYPE_ALIAS add constraint
+HITA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table HSE_INCIDENT_WEATHER add constraint
+HIW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INSTRUMENT add constraint
+INS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INSTRUMENT_AREA add constraint
+INSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INSTRUMENT_COMPONENT add constraint
+INSCOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INSTRUMENT_DETAIL add constraint
+INSD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INSTRUMENT_XREF add constraint
+INSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INTEREST_SET add constraint
+INT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INT_SET_COMPONENT add constraint
+INTCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INT_SET_PARTNER add constraint
+INTP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INT_SET_PARTNER_CONT add constraint
+INTPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INT_SET_STATUS add constraint
+INTS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table INT_SET_XREF add constraint
+INTX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_AGREEMENT add constraint
+LRAG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_AGREE_PART add constraint
+LRAP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_ALIAS add constraint
+LRAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_AREA add constraint
+LRAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_BA_SERVICE add constraint
+LRBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_OCCUPANT add constraint
+LRO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_REMARK add constraint
+LRRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT add constraint
+LR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_APPLIC add constraint
+LRAPP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_BA_LIC add constraint
+LRBAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_COMPONENT add constraint
+LRCOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_FACILITY add constraint
+LRFAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_FIELD add constraint
+LRFLD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_INSTRUMENT add constraint
+LRI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_POOL add constraint
+LRP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_REST add constraint
+LRR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_REST_REM add constraint
+LRRR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_WELL add constraint
+LRW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_RIGHT_WELL_SUBST add constraint
+LRWS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE add constraint
+LS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_BA_SERVICE add constraint
+LSBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_BID add constraint
+LSOB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_BID_SET add constraint
+LSBS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_BID_SET_BID add constraint
+LSBSB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_FEE add constraint
+LSF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_OFFERING add constraint
+LSO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_OFFERING_AREA add constraint
+LSOA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_REQUEST add constraint
+LSRQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_RESTRICTION add constraint
+LSOR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_REST_REMARK add constraint
+LSRR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SALE_WORK_BID add constraint
+LSWB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_SIZE add constraint
+LRSZ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_STATUS add constraint
+LRST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_TERMINATION add constraint
+LRTM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_TITLE add constraint
+LRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_TRACT_FACTOR add constraint
+LRTF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_UNIT add constraint
+LRU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_UNIT_TRACT add constraint
+LRUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LAND_XREF add constraint
+LRX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_CARTER_LOC add constraint
+LECTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_CONGRESS_LOC add constraint
+LECON_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_DLS_LOC add constraint
+LEDLS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_FPS_LOC add constraint
+LEFPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_GEODETIC_LOC add constraint
+LEGEO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_LOC_REMARK add constraint
+LELR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_NE_LOC add constraint
+LENE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_NORTH_SEA_LOC add constraint
+LENSEA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_NTS_LOC add constraint
+LENTS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_OFFSHORE_LOC add constraint
+LEOFF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_OHIO_LOC add constraint
+LEOH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LEGAL_TEXAS_LOC add constraint
+LETX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_DESC_OTHER add constraint
+LIDO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_LOG add constraint
+LIL_R_S_FK foreign key (LITH_LOG_SOURCE) references
+r_source(SOURCE);
+alter table LITH_LOG_BA_SERVICE add constraint
+LITHBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_LOG_COMPONENT add constraint
+LILC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_MEASURED_SEC add constraint
+LIMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_SAMPLE add constraint
+LISA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_SAMPLE_COLLECTION add constraint
+LISAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_SAMPLE_DESC add constraint
+LISAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_SAMPLE_PREP add constraint
+LISAP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table LITH_SAMPLE_PREP_METH add constraint
+LISAPM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table NOTIFICATION add constraint
+NOTI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table NOTIFICATION_COMPONENT add constraint
+NOTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table NOTIF_BA add constraint
+NOTB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIGATION add constraint
+OB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIGATION_COMPONENT add constraint
+OBCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_ALLOW_DEDUCTION add constraint
+OBAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_BA_SERVICE add constraint
+OBBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_CALC add constraint
+OBC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_DEDUCTION add constraint
+OBD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_DEDUCT_CALC add constraint
+OBDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_PAYMENT add constraint
+OBP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_PAYMENT_INSTR add constraint
+OBPI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_PAYMENT_RATE add constraint
+OBPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_PAY_DETAIL add constraint
+OBPD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_REMARK add constraint
+OBR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_SUBSTANCE add constraint
+OBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_TYPE add constraint
+OBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table OBLIG_XREF add constraint
+OBX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_ABUND_QUALIFIER add constraint
+PAAQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_ABUND_SCHEME add constraint
+PAAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_CLIMATE add constraint
+PACL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_CONFIDENCE add constraint
+PACO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_FOSSIL_IND add constraint
+PAFI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_FOSSIL_INTERP add constraint
+PAFIN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_FOSSIL_LIST add constraint
+PAFL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_FOSSIL_OBS add constraint
+PAFO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_INTERP add constraint
+PAI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_OBS_QUALIFIER add constraint
+PAOQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_SUMMARY add constraint
+PASU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_SUM_AUTHOR add constraint
+PASA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_SUM_COMP add constraint
+PASCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_SUM_INTERVAL add constraint
+PASI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_SUM_SAMPLE add constraint
+PASS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_SUM_XREF add constraint
+PASX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PALEO_THERMAL_ALT_IND add constraint
+PATAI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN add constraint
+PDE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_ALLOC_FACTOR add constraint
+PDENAF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_COMPONENT add constraint
+PDENC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_DECLINE_CASE add constraint
+PDENDFC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_DECLINE_CONDITION add constraint
+PDENDCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_DECLINE_SEGMENT add constraint
+PDENDF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_FLOW_MEASUREMENT add constraint
+PDENFM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_IN_AREA add constraint
+PDENIA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_MATERIAL_BAL add constraint
+PDENMB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_OPER_HIST add constraint
+PDENOH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_PROD_STRING_XREF add constraint
+PDENPSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_PR_STR_ALLOWABLE add constraint
+PDENPSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_PR_STR_FORM add constraint
+PDENPSF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_STATUS_HIST add constraint
+PDENSH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_VOLUME_ANALYSIS add constraint
+PDENVA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_VOL_DISPOSITION add constraint
+PDENVD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_VOL_REGIME add constraint
+PDENVR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_VOL_SUMMARY add constraint
+PDENVS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_VOL_SUMM_OTHER add constraint
+PDENVSO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PDEN_XREF add constraint
+PDENX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table POOL add constraint
+PL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table POOL_ALIAS add constraint
+PLA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table POOL_AREA add constraint
+PLAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table POOL_COMPONENT add constraint
+PLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table POOL_INSTRUMENT add constraint
+PLI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table POOL_VERSION add constraint
+PLV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_AUDIT_HISTORY add constraint
+PAH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_AUDIT_HISTORY_REM add constraint
+PAHR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CHECK_CONS_VALUE add constraint
+PCCV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CODE_VERSION add constraint
+PCV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CODE_VERSION_COLUMN add constraint
+PCVC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CODE_VERSION_USE add constraint
+PCVU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CODE_VERSION_XREF add constraint
+PCVX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_COLUMN add constraint
+PC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_COLUMN_ALIAS add constraint
+PCAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CONSTRAINT add constraint
+PCON_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_CONS_COLUMN add constraint
+PCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_DATA_STORE add constraint
+PDS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_DOMAIN add constraint
+PD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_EXCEPTION add constraint
+PE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_GROUP add constraint
+PG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_GROUP_OBJECT add constraint
+PGOB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_GROUP_OWNER add constraint
+PGO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_GROUP_REMARK add constraint
+PGR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_GROUP_XREF add constraint
+PGX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_INDEX add constraint
+PI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_INDEX_COLUMN add constraint
+PIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_MAP_DETAIL add constraint
+PDM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_MAP_RULE add constraint
+PMR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_MEASUREMENT_SYSTEM add constraint
+PMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_METRIC add constraint
+PM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_METRIC_COMPONENT add constraint
+PMC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_METRIC_VALUE add constraint
+PMV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_OBJECT_STATUS add constraint
+POS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_PROCEDURE add constraint
+PP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_PROPERTY_SET add constraint
+PPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_QUALITY_CONTROL add constraint
+PQC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_QUANTITY add constraint
+PQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_QUANTITY_ALIAS add constraint
+PQA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_RULE add constraint
+PR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_RULE_ALIAS add constraint
+PRA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_RULE_COMPONENT add constraint
+PRC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_RULE_DETAIL add constraint
+PRD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_RULE_ENFORCEMENT add constraint
+PRE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_RULE_XREF add constraint
+PRX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SCHEMA_ENTITY add constraint
+PSE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SCHEMA_ENTITY_ALIAS add constraint
+PSEA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SCHEMA_GROUP add constraint
+PSG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SYSTEM add constraint
+PSYS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SYSTEM_ALIAS add constraint
+PSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SYSTEM_APPLICATION add constraint
+PSAP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_SYSTEM_MAP add constraint
+PSM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_TABLE add constraint
+PT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_TABLE_ALIAS add constraint
+PTA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_TABLE_HISTORY add constraint
+PTDH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_UNIT_CONVERSION add constraint
+PUC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_UNIT_OF_MEASURE add constraint
+PUOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_UOM_ALIAS add constraint
+PUA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_VOL_MEAS_CONV add constraint
+PVMC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_VOL_MEAS_REGIME add constraint
+PVMR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PPDM_VOL_MEAS_USE add constraint
+PVMU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PRODUCT add constraint
+PROD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PRODUCT_COMPOSITION add constraint
+PRODC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_LEASE_UNIT add constraint
+PLU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_LEASE_UNIT_ALIAS add constraint
+PLUA_R_S_FK foreign key (ALIAS_SOURCE) references
+r_source(SOURCE);
+alter table PROD_LEASE_UNIT_ALIAS add constraint
+PLUA_R_S_FK2 foreign key (LEASE_UNIT_SOURCE) references
+r_source(SOURCE);
+alter table PROD_LEASE_UNIT_AREA add constraint
+PLUAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_LEASE_UNIT_VERSION add constraint
+PLUV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_STRING add constraint
+PS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_STRING_ALIAS add constraint
+PSAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_STRING_COMPONENT add constraint
+PSCMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_STRING_FORMATION add constraint
+PSF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_STRING_FORM_ALIAS add constraint
+PSFAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROD_STR_STAT_HIST add constraint
+PSSH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT add constraint
+PROJ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_ALIAS add constraint
+PROJA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_BA add constraint
+PROJB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_BA_ROLE add constraint
+PROJBR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_COMPONENT add constraint
+PROJCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_CONDITION add constraint
+PROJC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_EQUIPMENT add constraint
+PROJE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_EQUIP_ROLE add constraint
+PROJER_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_PLAN add constraint
+PROJP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_PLAN_STEP add constraint
+PROJPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_PLAN_STEP_XREF add constraint
+PROJPSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_STATUS add constraint
+PROJST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_STEP add constraint
+PROJS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_STEP_BA add constraint
+PROJSB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_STEP_EQUIP add constraint
+PROJSE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_STEP_TIME add constraint
+PROJSTI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJECT_STEP_XREF add constraint
+PROJSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PROJ_STEP_CONDITION add constraint
+PROJSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PR_LSE_UNIT_STR_HIST add constraint
+PLUSH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PR_STR_FORM_COMPLETION add constraint
+PSFC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table PR_STR_FORM_STAT_HIST add constraint
+PSFSH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RATE_AREA add constraint
+RATEA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RATE_SCHEDULE add constraint
+RATE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RATE_SCHEDULE_COMPONENT add constraint
+RATEC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RATE_SCHEDULE_XREF add constraint
+RATESX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RATE_SCHED_DETAIL add constraint
+RATESD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REPORT_HIER add constraint
+RPH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REPORT_HIER_ALIAS add constraint
+RPHA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REPORT_HIER_DESC add constraint
+RPHD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REPORT_HIER_LEVEL add constraint
+RPHL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REPORT_HIER_TYPE add constraint
+RPHT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REPORT_HIER_USE add constraint
+RPHU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_CLASS add constraint
+RSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_COMPONENT add constraint
+RSCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_ECO_RUN add constraint
+RSV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_ECO_SCHEDULE add constraint
+RSESC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_ECO_VOLUME add constraint
+RSEV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_PRODUCT add constraint
+RSP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_PROD_PROPERTY add constraint
+RSPP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_REVISION_CAT add constraint
+RSRC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_VOL_REGIME add constraint
+RSVMR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_VOL_REVISION add constraint
+RSVR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_VOL_SUMMARY add constraint
+RSVS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESENT_XREF add constraint
+RSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESERVE_CLASS add constraint
+RSCL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESERVE_CLASS_CALC add constraint
+RSCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESERVE_CLASS_FORMULA add constraint
+RSCF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESERVE_ENTITY add constraint
+RSE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RESTRICTION add constraint
+REST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REST_ACTIVITY add constraint
+RESTA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REST_CLASS add constraint
+RESTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REST_CONTACT add constraint
+RESTCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REST_REMARK add constraint
+RESTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table REST_TEXT add constraint
+RESTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_AUX_CHANNEL add constraint
+RMAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_CIRCULATION add constraint
+RMCI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_CIRC_PROCESS add constraint
+RMCP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_COMPOSITE add constraint
+RMCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_COPY_RECORD add constraint
+RMCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_CREATOR add constraint
+RMCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_CUSTODY add constraint
+RMCU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_CONTENT add constraint
+RMDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_STORE add constraint
+RMDS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_STORE_HIER add constraint
+RMDSH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_STORE_HIER_LEVEL add constraint
+RMDSHL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_STORE_ITEM add constraint
+RMDSI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_STORE_MEDIA add constraint
+RMDSM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DATA_STORE_STRUCTURE add constraint
+RMDSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DECRYPT_KEY add constraint
+RMDK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_DOCUMENT add constraint
+RMD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_ENCODING add constraint
+RME_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_EQUIPMENT add constraint
+RMEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_FILE_CONTENT add constraint
+RMFC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_FOSSIL add constraint
+RMFO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_IMAGE_COMP add constraint
+RMIMC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_IMAGE_LOC add constraint
+RMIML_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_IMAGE_SECT add constraint
+RMIMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFORMATION_ITEM add constraint
+RMII_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_COORD_QUALITY add constraint
+RMICQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_DATA_QUALITY add constraint
+RMIIDQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_ALIAS add constraint
+RMIIA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_BA add constraint
+RMBA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_CONTENT add constraint
+RMIIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_DESC add constraint
+RMIID_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_GEOMETRY add constraint
+RMIIG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_GROUP add constraint
+RMIIGP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_MAINT add constraint
+RMIIM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_ORIGIN add constraint
+RMIIO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_INFO_ITEM_STATUS add constraint
+RMIIST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_KEYWORD add constraint
+RMK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_LITH_SAMPLE add constraint
+RMLS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_MAP add constraint
+RMM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_PHYSICAL_ITEM add constraint
+RMPI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_PHYS_ITEM_CONDITION add constraint
+RMPIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_PHYS_ITEM_GROUP add constraint
+RMPIG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_PHYS_ITEM_MAINT add constraint
+RMPIM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_PHYS_ITEM_ORIGIN add constraint
+RMPIO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_PHYS_ITEM_STORE add constraint
+RMPIS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_SEIS_TRACE add constraint
+RMST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_SPATIAL_DATASET add constraint
+RMSD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_THESAURUS add constraint
+RMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_THESAURUS_GLOSSARY add constraint
+RMTWG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_THESAURUS_WORD add constraint
+RMTW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_THESAURUS_WORD_XREF add constraint
+RMTWX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_TRACE_HEADER add constraint
+RMTH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table RM_WELL_LOG add constraint
+RMWL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ACCESS_CONDITION add constraint
+R_AC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ACCOUNT_PROC_TYPE add constraint
+R_APT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ACTIVITY_SET_TYPE add constraint
+R_ACTST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ACTIVITY_TYPE add constraint
+R_AT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ADDITIVE_METHOD add constraint
+R_AM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ADDITIVE_TYPE add constraint
+R_ADT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ADDRESS_TYPE add constraint
+R_ADDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AIRCRAFT_TYPE add constraint
+R_ACT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AIR_GAS_CODE add constraint
+R_AGC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ALIAS_REASON_TYPE add constraint
+R_ART_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ALIAS_TYPE add constraint
+R_ATY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ALLOCATION_TYPE add constraint
+R_ALT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ALLOWABLE_EXPENSE add constraint
+R_AX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ANALYSIS_PROPERTY add constraint
+R_AP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ANALYSIS_REPORT add constraint
+R_AR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ANAL_PROPERTY_CODE add constraint
+R_APC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AOF_ANALYSIS_TYPE add constraint
+R_AAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AOF_CALC_METHOD add constraint
+R_ACM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_API_LOG_SYSTEM add constraint
+R_ALS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLICATION_COMP_TYPE add constraint
+R_APPCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_ATTACHMENT add constraint
+R_AA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_BA_ROLE add constraint
+R_ABR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_DECISION add constraint
+R_AD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_DESC add constraint
+R_ADE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_REMARK_TYPE add constraint
+R_ARMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_STATUS add constraint
+R_AST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_APPLIC_TYPE add constraint
+R_APPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AREA_COMPONENT_TYPE add constraint
+R_ACMPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AREA_CONTAIN_TYPE add constraint
+R_ACT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AREA_DESC_CODE add constraint
+R_ADC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AREA_DESC_TYPE add constraint
+R_ADT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AREA_TYPE add constraint
+R_ARTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AUTHORITY_TYPE add constraint
+R_AUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_AUTHOR_TYPE add constraint
+R_AUTH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_AUTHORITY_COMP_TYPE add constraint
+R_BAAUCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_CATEGORY add constraint
+R_BC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_COMPONENT_TYPE add constraint
+R_BACT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_CONTACT_LOC_TYPE add constraint
+R_BCLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_CREW_OVERHEAD_TYPE add constraint
+R_BCOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_CREW_TYPE add constraint
+R_BCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_DESC_CODE add constraint
+R_BADC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_DESC_REF_VALUE add constraint
+R_BADRVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_DESC_TYPE add constraint
+R_BADT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_LIC_DUE_CONDITION add constraint
+R_BALDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_LIC_VIOLATION_TYPE add constraint
+R_BVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_LIC_VIOL_RESOL add constraint
+R_BLVRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_ORGANIZATION_COMP_TYPE add constraint
+R_BAOCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_ORGANIZATION_TYPE add constraint
+R_BOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_PERMIT_TYPE add constraint
+R_BPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_PREF_TYPE add constraint
+R_BPRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_SERVICE_TYPE add constraint
+R_BST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_STATUS add constraint
+R_BS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_TYPE add constraint
+R_BT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BA_XREF_TYPE add constraint
+R_BXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BHP_METHOD add constraint
+R_BM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BH_PRESS_TEST_TYPE add constraint
+R_BPTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BIT_BEARING_CONDITION add constraint
+R_BBC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BIT_CUT_STRUCT_DULL add constraint
+R_BCSD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BIT_CUT_STRUCT_INNER add constraint
+R_BCSI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BIT_CUT_STRUCT_LOC add constraint
+R_BCSL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BIT_CUT_STRUCT_OUTER add constraint
+R_BCSO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BIT_REASON_PULLED add constraint
+R_BRP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BLOWOUT_FLUID add constraint
+R_BF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_BUILDUP_RADIUS_TYPE add constraint
+R_BRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_ADDITIVE_GROUP add constraint
+R_CAG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_ADDITIVE_QUANTITY add constraint
+R_CAQT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_ADDITIVE_SPEC add constraint
+R_CAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_ADDITIVE_XREF add constraint
+R_CAX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_EQUIP_GROUP add constraint
+R_CEG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_EQUIP_SPEC add constraint
+R_CES_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_EQUIP_SPEC_CODE add constraint
+R_CSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CAT_EQUIP_TYPE add constraint
+R_CET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CEMENT_TYPE add constraint
+R_CT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CHECKSHOT_SRVY_TYPE add constraint
+R_CST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CLASS_DESC_PROPERTY add constraint
+R_CDP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CLASS_LEV_COMP_TYPE add constraint
+R_CLCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CLASS_LEV_XREF_TYPE add constraint
+R_CLXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CLASS_SYSTEM_DIMENSION add constraint
+R_CSD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CLASS_SYST_XREF_TYPE add constraint
+R_CSET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CLIMATE add constraint
+R_CL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CODE_VERSION_XREF_TYPE add constraint
+R_PCVX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COLLAR_TYPE add constraint
+R_COT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COLOR add constraint
+R_COL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COLOR_FORMAT add constraint
+R_CFMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COLOR_PALETTE add constraint
+R_COLP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COMPLETION_METHOD add constraint
+R_CM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COMPLETION_STATUS add constraint
+R_CS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COMPLETION_STATUS_TYPE add constraint
+R_CSTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COMPLETION_TYPE add constraint
+R_CT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONDITION_TYPE add constraint
+R_COT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONFIDENCE_TYPE add constraint
+R_CONT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONFIDENTIAL_REASON add constraint
+R_CR2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONFIDENTIAL_TYPE add constraint
+R_CT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONFORMITY_RELATION add constraint
+R_CONR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSENT_BA_ROLE add constraint
+R_CONSBR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSENT_COMP_TYPE add constraint
+R_CONSCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSENT_CONDITION add constraint
+R_CONSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSENT_REMARK add constraint
+R_CONSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSENT_STATUS add constraint
+R_CONSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSENT_TYPE add constraint
+R_CONST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_ATTEND_TYPE add constraint
+R_COAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_COMP_TYPE add constraint
+R_CCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_DISC_TYPE add constraint
+R_CODT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_ISSUE_TYPE add constraint
+R_COIT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_REASON add constraint
+R_COR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_RESOLUTION add constraint
+R_CORE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_ROLE add constraint
+R_CORL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_TYPE add constraint
+R_COTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONSULT_XREF_TYPE add constraint
+R_COX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTACT_ROLE add constraint
+R_CR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTAMINANT_TYPE add constraint
+R_CONTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTEST_COMP_TYPE add constraint
+R_COTCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTEST_PARTY_ROLE add constraint
+R_CPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTEST_RESOLUTION add constraint
+R_CRES_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTEST_TYPE add constraint
+R_CTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONTRACT_COMP_TYPE add constraint
+R_CCT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_BA_ROLE add constraint
+R_CBR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_COMP_REASON add constraint
+R_CCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_EXTEND_COND add constraint
+R_CXC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_EXTEND_TYPE add constraint
+R_CXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_INSUR_ELECT add constraint
+R_CIE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_OPERATING_PROC add constraint
+R_COP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_PROVISION_TYPE add constraint
+R_CPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_PROV_XREF_TYPE add constraint
+R_CPXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_STATUS add constraint
+R_CSTAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_STATUS_TYPE add constraint
+R_CST3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_TYPE add constraint
+R_CT8_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_VOTE_RESPONSE add constraint
+R_CVR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_VOTE_TYPE add constraint
+R_CVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CONT_XREF_TYPE add constraint
+R_CXTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COORD_CAPTURE add constraint
+R_CC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COORD_COMPUTE add constraint
+R_CC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COORD_QUALITY add constraint
+R_CQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COORD_SYSTEM_TYPE add constraint
+R_CST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORE_HANDLING add constraint
+R_CH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORE_RECOVERY_TYPE add constraint
+R_CRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORE_SAMPLE_TYPE add constraint
+R_CST2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORE_SHIFT_METHOD add constraint
+R_CSM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORE_SOLVENT add constraint
+R_CS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORE_TYPE add constraint
+R_CT5_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CORRECTION_METHOD add constraint
+R_CM1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_COUPLING_TYPE add constraint
+R_CT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CREATOR_TYPE add constraint
+R_CRTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CS_TRANSFORM_PARM add constraint
+R_CSTP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CS_TRANSFORM_TYPE add constraint
+R_CTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CURVE_SCALE add constraint
+R_CS2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CURVE_TYPE add constraint
+R_CT6_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CURVE_XREF_TYPE add constraint
+R_CHT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CUSHION_TYPE add constraint
+R_CT7_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_CUTTING_FLUID add constraint
+R_CF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DATA_CIRC_PROCESS add constraint
+R_DCP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DATA_CIRC_STATUS add constraint
+R_DCS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DATA_STORE_TYPE add constraint
+R_DST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DATE_FORMAT_TYPE add constraint
+R_DFT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DATUM_ORIGIN add constraint
+R_DO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DECLINE_COND_CODE add constraint
+R_DCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DECLINE_COND_TYPE add constraint
+R_DCT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DECLINE_CURVE_TYPE add constraint
+R_DCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DECLINE_TYPE add constraint
+R_DT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DECRYPT_TYPE add constraint
+R_DET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DEDUCT_TYPE add constraint
+R_DT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIGITAL_FORMAT add constraint
+R_DF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIGITAL_OUTPUT add constraint
+R_DO1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIRECTION add constraint
+R_DIR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIR_SRVY_CLASS add constraint
+R_DSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIR_SRVY_COMPUTE add constraint
+R_DSC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIR_SRVY_POINT_TYPE add constraint
+R_DSPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIR_SRVY_RECORD add constraint
+R_DSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIR_SRVY_TYPE add constraint
+R_DST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DIST_REF_PT add constraint
+R_DRP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DOCUMENT_TYPE add constraint
+R_DOC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DOC_STATUS add constraint
+R_DS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILLING_MEDIA add constraint
+R_DM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_ASSEMBLY_COMP add constraint
+R_DAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_BIT_CONDITION add constraint
+R_DBC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_BIT_DETAIL_CODE add constraint
+R_DBDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_BIT_DETAIL_TYPE add constraint
+R_DBD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_BIT_JET_TYPE add constraint
+R_DBJT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_BIT_TYPE add constraint
+R_DBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_HOLE_POSITION add constraint
+R_DHP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_REPORT_TIME add constraint
+R_DRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_STAT_CODE add constraint
+R_DSTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_STAT_TYPE add constraint
+R_DSTAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_DRILL_TOOL_TYPE add constraint
+R_DTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ECONOMIC_SCENARIO add constraint
+R_ES_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ECONOMIC_SCHEDULE add constraint
+R_EST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ECOZONE_HIER_LEVEL add constraint
+R_EZHL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ECOZONE_TYPE add constraint
+R_EZT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ECOZONE_XREF add constraint
+R_EZX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EMPLOYEE_POSITION add constraint
+R_EP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EMPLOYEE_STATUS add constraint
+R_ES1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENCODING_TYPE add constraint
+R_ET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENHANCED_REC_TYPE add constraint
+R_ERT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENT_ACCESS_TYPE add constraint
+R_EAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENT_COMPONENT_TYPE add constraint
+R_ECT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENT_EXPIRY_ACTION add constraint
+R_EEA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENT_SEC_GROUP_TYPE add constraint
+R_ESGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENT_SEC_GROUP_XREF add constraint
+R_ESGXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENT_TYPE add constraint
+R_ENT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ENVIRONMENT add constraint
+R_E_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_BA_ROLE_TYPE add constraint
+R_EBART_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_COMPONENT_TYPE add constraint
+R_EQCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_INSTALL_LOC add constraint
+R_EIL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_MAINT_LOC add constraint
+R_EML_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_MAINT_REASON add constraint
+R_EMR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_MAINT_STATUS add constraint
+R_EQMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_MAINT_STAT_TYPE add constraint
+R_EQST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_REMOVE_REASON add constraint
+R_ERR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_SPEC add constraint
+R_ESP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_SPEC_REF_TYPE add constraint
+R_ESRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_STATUS add constraint
+R_ESTAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_STATUS_TYPE add constraint
+R_ESTA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_SYSTEM_CONDITION add constraint
+R_ESC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_USE_STAT_TYPE add constraint
+R_EUST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EQUIP_XREF_TYPE add constraint
+R_EXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EW_DIRECTION add constraint
+R_ED_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_EW_START_LINE add constraint
+R_ESL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_CLASS add constraint
+R_FAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_COMP_TYPE add constraint
+R_FACT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_SPEC_CODE add constraint
+R_FSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_SPEC_TYPE add constraint
+R_FST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_STATUS add constraint
+R_FS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_TYPE add constraint
+R_FACT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FACILITY_XREF_TYPE add constraint
+R_FXT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_FUNCTION add constraint
+R_FF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_LIC_COND add constraint
+R_FLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_LIC_COND_CODE add constraint
+R_FLCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_LIC_DUE_CONDITION add constraint
+R_FLDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_LIC_EXTEND_TYPE add constraint
+R_FLET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_LIC_VIOLATION_TYPE add constraint
+R_FLVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_LIC_VIOL_RESOL add constraint
+R_FLVRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_MAINTAIN_TYPE add constraint
+R_FMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_MAINT_STATUS add constraint
+R_FMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_MAINT_STATUS_TYPE add constraint
+R_FMST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_PIPE_COVER add constraint
+R_FPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_PIPE_MATERIAL add constraint
+R_FPM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_PIPE_TYPE add constraint
+R_FPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_SPEC_REFERENCE add constraint
+R_FSRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAC_STATUS_TYPE add constraint
+R_FAST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FAULT_TYPE add constraint
+R_FT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIELD_COMPONENT_TYPE add constraint
+R_FLCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIELD_STATION_TYPE add constraint
+R_FST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIELD_TYPE add constraint
+R_FT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIN_COMPONENT_TYPE add constraint
+R_FCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIN_COST_TYPE add constraint
+R_FICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIN_STATUS add constraint
+R_FIS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIN_TYPE add constraint
+R_FT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FIN_XREF_TYPE add constraint
+R_FXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FLUID_TYPE add constraint
+R_FT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FONT add constraint
+R_F_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FONT_EFFECT add constraint
+R_FE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOOTAGE_ORIGIN add constraint
+R_FO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_ALIAS_TYPE add constraint
+R_FAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_ASSEMBLAGE_TYPE add constraint
+R_FAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_COLOR add constraint
+R_FC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_DESC_CODE add constraint
+R_FDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_DESC_TYPE add constraint
+R_FDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_LIFE_HABIT add constraint
+R_FLH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_NAME_SET_TYPE add constraint
+R_FNST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_OBS_TYPE add constraint
+R_FOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_TAI_COLOR add constraint
+R_TAI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_TAXON_GROUP add constraint
+R_FTG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_TAXON_LEVEL add constraint
+R_FTL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_FOS_XREF add constraint
+R_FX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_GEOMETRY_FORMAT add constraint
+R_GF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_GEOMETRY_TYPE add constraint
+R_GT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_GRANTED_RIGHT_TYPE add constraint
+R_GRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HOLE_CONDITION add constraint
+R_HC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HORIZ_DRILL_REASON add constraint
+R_HDR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HORIZ_DRILL_TYPE add constraint
+R_HDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HSE_COMP_ROLE add constraint
+R_HCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HSE_INCIDENT_COMP_TYPE add constraint
+R_HICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HSE_INCIDENT_DETAIL add constraint
+R_HIR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_HSE_RESPONSE_TYPE add constraint
+R_HRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_IMAGE_CALIBRATE_METHOD add constraint
+R_ICM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_IMAGE_SECTION_TYPE add constraint
+R_ISET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_BA_ROLE add constraint
+R_ICR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_CAUSE_CODE add constraint
+R_ICI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_CAUSE_TYPE add constraint
+R_ICT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_INTERACT_TYPE add constraint
+R_IIT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_RESP_RESULT add constraint
+R_IAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_SUBSTANCE add constraint
+R_ISUB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INCIDENT_SUBST_ROLE add constraint
+R_ISRL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INFORMATION_PROCESS add constraint
+R_IP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INPUT_TYPE add constraint
+R_INT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INSP_COMP_TYPE add constraint
+R_ICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INSP_STATUS add constraint
+R_IS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INSTRUMENT_COMP_TYPE add constraint
+R_ICT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INSTRUMENT_TYPE add constraint
+R_LIT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INST_DETAIL_CODE add constraint
+R_INSDTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INST_DETAIL_REF_VALUE add constraint
+INSDRVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INST_DETAIL_TYPE add constraint
+R_INSDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INTERP_ORIGIN_TYPE add constraint
+R_IOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INTERP_TYPE add constraint
+R_IT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_COMPONENT add constraint
+R_ISC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_ROLE add constraint
+R_ISR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_STATUS add constraint
+R_ISS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_STATUS_TYPE add constraint
+R_ISST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_TRIGGER add constraint
+R_ISE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_TYPE add constraint
+R_IST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INT_SET_XREF_TYPE add constraint
+R_ISXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_INV_MATERIAL_TYPE add constraint
+R_DMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ITEM_CATEGORY add constraint
+R_IC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ITEM_SUB_CATEGORY add constraint
+R_ISC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_ACQTN_METHOD add constraint
+R_LAM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_AGREE_TYPE add constraint
+R_LAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_BIDDER_TYPE add constraint
+R_LBT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_BID_STATUS add constraint
+R_LBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_BID_TYPE add constraint
+R_LBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_CASE_ACTION add constraint
+R_LCA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_CASE_TYPE add constraint
+R_LCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_CASH_BID_TYPE add constraint
+R_LCBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_COMPONENT_TYPE add constraint
+R_LCT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_LESSOR_TYPE add constraint
+R_LLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_OFFRING_STATUS add constraint
+R_LOS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_OFFRING_TYPE add constraint
+R_LOT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_PROPERTY_TYPE add constraint
+R_LPT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_REF_NUM_TYPE add constraint
+R_LRNT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_RENTAL_TYPE add constraint
+R_LRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_REQUEST_TYPE add constraint
+R_LRT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_REQ_STATUS add constraint
+R_LRS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_RIGHT_CATEGORY add constraint
+R_LRC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_RIGHT_STATUS add constraint
+R_LRS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_STATUS_TYPE add constraint
+R_LRST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_TITLE_CHG_RSN add constraint
+R_LTCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_TITLE_TYPE add constraint
+R_LTT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_TRACT_TYPE add constraint
+R_LTT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_UNIT_TYPE add constraint
+R_LUT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LAND_WELL_REL_TYPE add constraint
+R_LWRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LANGUAGE add constraint
+R_LANG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LEASE_UNIT_STATUS add constraint
+R_LUS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LEASE_UNIT_TYPE add constraint
+R_LUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LEGAL_SURVEY_TYPE add constraint
+R_LST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LICENSE_STATUS add constraint
+R_LIST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LIC_STATUS_TYPE add constraint
+R_LISTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LINER_TYPE add constraint
+R_LT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITHOLOGY add constraint
+R_L_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_ABUNDANCE add constraint
+R_LA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_BOUNDARY_TYPE add constraint
+R_LBT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_COLLECT_METHOD add constraint
+R_LCM1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_COLOR add constraint
+R_LC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_COMPONENT add constraint
+R_LC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_CONSOLIDATION add constraint
+R_LC2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_CONTAMINANT add constraint
+R_LC3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_CYCLE_BED add constraint
+R_LCB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_DEP_ENV add constraint
+R_LDE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_DIAGENESIS add constraint
+R_LD1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_DISTRIBUTION add constraint
+R_LD2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_INTENSITY add constraint
+R_LI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_LOG_COMP_TYPE add constraint
+R_LLCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_LOG_TYPE add constraint
+R_LLT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_OIL_STAIN add constraint
+R_LOS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_PATTERN_CODE add constraint
+R_LPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_PREP_CLASS add constraint
+R_LPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_ROCK_MATRIX add constraint
+R_LRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_ROCK_PROFILE add constraint
+R_LRP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_ROCK_TYPE add constraint
+R_LRT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_ROUNDING add constraint
+R_LR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_SCALE_SCHEME add constraint
+R_LSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_SORTING add constraint
+R_LS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_SOURCE add constraint
+R_LS2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LITH_STRUCTURE add constraint
+R_LS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOCATION_DESC_TYPE add constraint
+R_LDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOCATION_QUALIFIER add constraint
+R_LQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOCATION_QUALITY add constraint
+R_LQ1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOCATION_TYPE add constraint
+R_LT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_ARRAY_DIMENSION add constraint
+R_LADT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_CORRECT_METHOD add constraint
+R_LCM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_CRV_CLASS_SYSTEM add constraint
+R_LCCS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_DEPTH_TYPE add constraint
+R_LDT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_DIRECTION add constraint
+R_LD3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_GOOD_VALUE_TYPE add constraint
+R_LGVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_INDEX_TYPE add constraint
+R_LIX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_MATRIX add constraint
+R_LM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_POSITION_TYPE add constraint
+R_LPOST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOG_TOOL_TYPE add constraint
+R_LTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LOST_MATERIAL_TYPE add constraint
+R_LMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LR_FACILITY_XREF add constraint
+R_LFX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LR_FIELD_XREF add constraint
+R_LFX1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LR_SIZE_TYPE add constraint
+R_LST2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LR_TERMIN_REQMT add constraint
+R_LTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LR_TERMIN_TYPE add constraint
+R_LTT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_LR_XREF_TYPE add constraint
+R_LXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_L_OFFR_CANCEL_RSN add constraint
+R_LOCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MAINT_PROCESS add constraint
+R_MP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MBAL_COMPRESS_TYPE add constraint
+R_MBCM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MBAL_CURVE_TYPE add constraint
+R_MBCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MEASUREMENT_TYPE add constraint
+R_MT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MEASURE_TECHNIQUE add constraint
+R_MT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MEDIA_TYPE add constraint
+R_MT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MISC_DATA_CODE add constraint
+R_MDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MISC_DATA_TYPE add constraint
+R_MDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MONTH add constraint
+R_MO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUD_COLLECT_REASON add constraint
+R_MCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUD_LOG_COLOR add constraint
+R_MLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUD_PROPERTY_CODE add constraint
+R_MPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUD_PROPERTY_REF add constraint
+R_MPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUD_PROPERTY_TYPE add constraint
+R_MPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUD_SAMPLE_TYPE add constraint
+R_MST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_MUNICIPALITY add constraint
+R_M_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NAME_SET_XREF_TYPE add constraint
+R_NSXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NODE_POSITION add constraint
+R_NP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NORTH add constraint
+R_N_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NOTIFICATION_COMP_TYPE add constraint
+R_NTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NOTIFICATION_TYPE add constraint
+R_NT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NS_DIRECTION add constraint
+R_ND_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_NS_START_LINE add constraint
+R_NSL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_CALC_METHOD add constraint
+R_OCM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_CALC_POINT add constraint
+R_OCP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_CATEGORY add constraint
+R_OC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_COMPONENT_TYPE add constraint
+R_OCT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_COMP_REASON add constraint
+R_OCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_DEDUCT_CALC add constraint
+R_ODC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_PARTY_TYPE add constraint
+R_OPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_PAY_RESP add constraint
+R_OPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_REMARK_TYPE add constraint
+R_ORT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_SUSPEND_PAY add constraint
+R_OSP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_TRIGGER add constraint
+R_OT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_TYPE add constraint
+R_OT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OBLIG_XREF_TYPE add constraint
+R_OXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OFFSHORE_AREA_CODE add constraint
+R_OAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OFFSHORE_COMP_TYPE add constraint
+R_OCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OIL_TYPE add constraint
+R_OT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ONTOGENY_TYPE add constraint
+R_OT4_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_OPERAND_QUALIFIER add constraint
+R_OQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ORIENTATION add constraint
+R_O_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PALEO_IND_TYPE add constraint
+R_PIT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PALEO_INTERP_TYPE add constraint
+R_PIT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PALEO_TYPE_FOSSIL add constraint
+R_PTF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAL_SUM_COMP_TYPE add constraint
+R_PSCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAL_SUM_XREF_TYPE add constraint
+R_PSXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PARCEL_LOT_TYPE add constraint
+R_PLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PARCEL_TYPE add constraint
+R_PT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAYMENT_TYPE add constraint
+R_PT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAYZONE_TYPE add constraint
+R_PT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAY_DETAIL_TYPE add constraint
+R_PDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAY_METHOD add constraint
+R_PM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PAY_RATE_TYPE add constraint
+R_PRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PDEN_AMEND_REASON add constraint
+R_PAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PDEN_COMPONENT_TYPE add constraint
+R_PCT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PDEN_STATUS add constraint
+R_PS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PDEN_STATUS_TYPE add constraint
+R_PST2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PDEN_XREF_TYPE add constraint
+R_PXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PERFORATION_METHOD add constraint
+R_PFM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PERFORATION_TYPE add constraint
+R_PFT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PERIOD_TYPE add constraint
+R_PT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PHYSICAL_ITEM_STATUS add constraint
+R_PIS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PHYSICAL_PROCESS add constraint
+R_PP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PHYS_ITEM_GROUP_TYPE add constraint
+R_PIGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PICK_LOCATION add constraint
+R_PL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PICK_QUALIFIER add constraint
+R_PQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PICK_QUALIF_REASON add constraint
+R_PQR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PICK_QUALITY add constraint
+R_PQ1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PICK_VERSION_TYPE add constraint
+R_PVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PLATFORM_TYPE add constraint
+R_PT5_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PLOT_SYMBOL add constraint
+R_PS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PLUG_TYPE add constraint
+R_PT6_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_POOL_COMPONENT_TYPE add constraint
+R_PCT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_POOL_STATUS add constraint
+R_PS2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_POOL_TYPE add constraint
+R_PT7_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_POROSITY_TYPE add constraint
+R_PT8_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_AUDIT_REASON add constraint
+R_PAR1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_AUDIT_TYPE add constraint
+R_PAUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_BOOLEAN_RULE add constraint
+R_PBRL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_CREATE_METHOD add constraint
+R_PCM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_DATA_TYPE add constraint
+R_PDT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_DEFAULT_VALUE add constraint
+R_PDV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_ENFORCE_METHOD add constraint
+R_PREM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_FAIL_RESULT add constraint
+R_PFR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_GROUP_TYPE add constraint
+R_PPGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_GROUP_USE add constraint
+R_PPGU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_GROUP_XREF_TYPE add constraint
+R_PGXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_INDEX_CATEGORY add constraint
+R_PIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_MAP_RULE_TYPE add constraint
+R_PMRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_MAP_TYPE add constraint
+R_PMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_METRIC_CODE add constraint
+R_PMC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_METRIC_COMP_TYPE add constraint
+R_PMCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_METRIC_REF_VALUE add constraint
+R_PMRV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_METRIC_TYPE add constraint
+R_PMT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_OBJECT_STATUS add constraint
+R_POBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_OBJECT_TYPE add constraint
+R_POBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_OPERATING_SYSTEM add constraint
+R_POS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_OWNER_ROLE add constraint
+R_POR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_PROC_TYPE add constraint
+P_PPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_QC_QUALITY add constraint
+R_PQCQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_QC_STATUS add constraint
+R_PQCS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_QC_TYPE add constraint
+R_PQCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RDBMS add constraint
+R_PRDB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_REF_VALUE_TYPE add constraint
+R_PRVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_ROW_QUALITY add constraint
+R_PRQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_CLASS add constraint
+R_PRC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_COMP_TYPE add constraint
+R_PRCT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_DETAIL_TYPE add constraint
+R_PRDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_PURPOSE add constraint
+R_PRP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_STATUS add constraint
+R_PRS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_USE_COND add constraint
+R_PRUC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_XREF_COND add constraint
+R_PRXC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_RULE_XREF_TYPE add constraint
+R_PRXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_SCHEMA_ENTITY add constraint
+R_PSET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_SCHEMA_GROUP add constraint
+R_PSGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_SYSTEM_TYPE add constraint
+R_PPST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_TABLE_TYPE add constraint
+R_PTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_UOM_ALIAS_TYPE add constraint
+R_PUAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PPDM_UOM_USAGE add constraint
+R_PUU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PRESERVE_QUALITY add constraint
+R_PQ2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PRESERVE_TYPE add constraint
+R_PT4_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PRODUCTION_METHOD add constraint
+R_PM1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PRODUCT_COMPONENT_TYPE add constraint
+R_PRCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROD_STRING_COMP_TYPE add constraint
+R_PSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROD_STRING_STATUS add constraint
+R_PSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROD_STRING_STAT_TYPE add constraint
+R_PSST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROD_STRING_TYPE add constraint
+R_PST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROD_STR_FM_STATUS add constraint
+R_PSFS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROD_STR_FM_STAT_TYPE add constraint
+R_PSFST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECTION_TYPE add constraint
+R_PT10_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_ALIAS_TYPE add constraint
+R_PRAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_BA_ROLE add constraint
+R_PBR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_COMP_REASON add constraint
+R_PCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_COMP_TYPE add constraint
+R_PCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_CONDITION add constraint
+R_PCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_EQUIP_ROLE add constraint
+R_PER_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_STATUS add constraint
+R_PSTA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_STATUS_TYPE add constraint
+R_PSTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJECT_TYPE add constraint
+R_PRT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJ_STEP_TYPE add constraint
+R_PST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROJ_STEP_XREF_TYPE add constraint
+R_PSTXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PROPPANT_TYPE add constraint
+R_PT11_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_PUBLICATION_NAME add constraint
+R_PN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_QUALIFIER_TYPE add constraint
+R_QT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_QUALITY add constraint
+R_Q_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATE_CONDITION add constraint
+R_RC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATE_SCHEDULE add constraint
+R_RSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATE_SCHEDULE_COMP_TYPE add constraint
+R_RC2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATE_SCHED_XREF add constraint
+R_RSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATE_TYPE add constraint
+R_RTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATIO_CURVE_TYPE add constraint
+R_RCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RATIO_FLUID_TYPE add constraint
+R_RFT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RECORDER_POSITION add constraint
+R_RP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RECORDER_TYPE add constraint
+R_RT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REMARK_TYPE add constraint
+R_RT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REMARK_USE_TYPE add constraint
+R_RUT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REPEAT_STRAT_TYPE add constraint
+R_RFTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REPORT_HIER_COMP add constraint
+R_RHC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REPORT_HIER_LEVEL add constraint
+R_RHL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REPORT_HIER_TYPE add constraint
+R_RHT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REP_HIER_ALIAS_TYPE add constraint
+R_RHAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_COMP_TYPE add constraint
+R_RCMPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_CONFIDENCE add constraint
+R_RCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_GROUP_TYPE add constraint
+R_RGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_REV_CAT add constraint
+R_RRC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_USE_TYPE add constraint
+R_RUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_VOL_METHOD add constraint
+R_RVM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RESENT_XREF_TYPE add constraint
+R_RXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REST_ACTIVITY add constraint
+R_RA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REST_DURATION add constraint
+R_RD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REST_REMARK add constraint
+R_RR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REST_TYPE add constraint
+R_RT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RETENTION_PERIOD add constraint
+R_RP1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_REVISION_METHOD add constraint
+R_RM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_BLOWOUT_PREVENTER add constraint
+R_RBOP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_CATEGORY add constraint
+R_RIGC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_CLASS add constraint
+R_RCL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_CODE add constraint
+R_RC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_DESANDER_TYPE add constraint
+R_RDST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_DESILTER_TYPE add constraint
+R_RDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_DRAWWORKS add constraint
+R_RDW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_GENERATOR_TYPE add constraint
+R_RPL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_HOOKBLOCK_TYPE add constraint
+R_HBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_MAST add constraint
+R_RMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_OVERHEAD_CAPACITY add constraint
+R_ROCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_OVERHEAD_TYPE add constraint
+R_ROT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_PUMP add constraint
+R_RPU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_PUMP_FUNCTION add constraint
+R_RPF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_SUBSTRUCTURE add constraint
+R_RSST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_SWIVEL_TYPE add constraint
+R_RST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RIG_TYPE add constraint
+R_RT4_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_CONTACT_TYPE add constraint
+R_RMIICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_CONTENT_TYPE add constraint
+R_RMIICOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_DEFICIENCY add constraint
+R_RMIIDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_DESC_TYPE add constraint
+R_RMIIDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_GROUP_TYPE add constraint
+R_RMGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_METADATA_CODE add constraint
+R_RMC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_METADATA_TYPE add constraint
+R_RMDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_QUALITY_CODE add constraint
+R_RMIIQC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_STATUS add constraint
+R_RMIIS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RMII_STATUS_TYPE add constraint
+R_RMIIST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_RM_THESAURUS_XREF add constraint
+R_RTX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROAD_CONDITION add constraint
+R_RCOND_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROAD_CONTROL_TYPE add constraint
+R_RCT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROAD_DRIVING_SIDE add constraint
+R_RDS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROAD_TRAFFIC_FLOW_TYPE add constraint
+R_RDTF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROCK_CLASS_SCHEME add constraint
+R_RCS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROLL_ALONG_METHOD add constraint
+R_RAM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_ROYALTY_TYPE add constraint
+R_RT5_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SALINITY_TYPE add constraint
+R_ST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_ANAL_COMP_TYPE add constraint
+R_SACT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_COLLECTION_TYPE add constraint
+R_SCT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_DESC_TYPE add constraint
+R_SDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_LOCATION add constraint
+R_SL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_SHAPE add constraint
+R_SS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_TYPE add constraint
+R_ST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SAMPLE_WATER_TYPE add constraint
+R_SWT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SCALE_TRANSFORM add constraint
+R_ST2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SCREEN_LOCATION add constraint
+R_SIL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SECTION_TYPE add constraint
+R_ST3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEISMIC_PATH add constraint
+R_SP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_3D_TYPE add constraint
+R_S3T_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_ACTIVITY_CLASS add constraint
+R_SACTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_ACTIVITY_TYPE add constraint
+R_SACT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_AUTHORIZE_LIMIT add constraint
+R_SAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_AUTHORIZE_REASON add constraint
+R_SAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_AUTHORIZE_TYPE add constraint
+R_SAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_BIN_METHOD add constraint
+R_SBM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_BIN_OUTLINE_TYPE add constraint
+R_SBOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_CABLE_MAKE add constraint
+R_SCM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_CHANNEL_TYPE add constraint
+R_SCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_DIMENSION add constraint
+R_SD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_ENERGY_TYPE add constraint
+R_SET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_FLOW_DESC_TYPE add constraint
+R_SFRMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_GROUP_TYPE add constraint
+R_SGT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_INSP_COMPONENT_TYPE add constraint
+R_SICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_LIC_COND add constraint
+R_SLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_LIC_COND_CODE add constraint
+R_SLCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_LIC_DUE_CONDITION add constraint
+R_SLDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_LIC_VIOL_RESOL add constraint
+R_SLVRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_LIC_VIOL_TYPE add constraint
+R_SLVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PARM_ORIGIN add constraint
+R_SPO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PATCH_TYPE add constraint
+R_SPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PICK_METHOD add constraint
+R_SPM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PROC_COMP_TYPE add constraint
+R_SPCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PROC_PARM add constraint
+R_SPP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PROC_SET_TYPE add constraint
+R_SPST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PROC_STATUS add constraint
+R_SPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PROC_STEP_NAME add constraint
+R_SPSN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_PROC_STEP_TYPE add constraint
+R_SPRST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_RCRD_FMT_TYPE add constraint
+R_SRFT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_RCRD_MAKE add constraint
+R_SRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_RCVR_ARRY_TYPE add constraint
+R_SRAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_RCVR_TYPE add constraint
+R_SRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_RECORD_TYPE add constraint
+R_SRT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_REF_DATUM add constraint
+R_SRD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_REF_NUM_TYPE add constraint
+R_SRNT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SAMPLE_TYPE add constraint
+R_SST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SEGMENT_REASON add constraint
+R_SSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SET_COMPONENT_TYPE add constraint
+R_SSCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SPECTRUM_TYPE add constraint
+R_SST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SRC_ARRAY_TYPE add constraint
+R_SSAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SRC_MAKE add constraint
+R_SSM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_STATION_TYPE add constraint
+R_SST2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_STATUS add constraint
+R_SS2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_STATUS_TYPE add constraint
+R_SST3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SUMMARY_TYPE add constraint
+R_SST5_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_SWEEP_TYPE add constraint
+R_SST4_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEIS_TRANS_COMP_TYPE add constraint
+R_STCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEND_METHOD add constraint
+R_SM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SERVICE_QUALITY add constraint
+R_SQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SEVERITY add constraint
+R_SV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_AIRSTRIP_TYPE add constraint
+R_SFAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_BRIDGE_TYPE add constraint
+R_SFBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_COMPONENT_TYPE add constraint
+R_SFCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_DESC_TYPE add constraint
+R_SFDT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_DESC_VALUE add constraint
+R_SFDV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_DOCK_TYPE add constraint
+R_SFDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_ELECTRIC_TYPE add constraint
+R_SFET_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_LANDING_TYPE add constraint
+R_SFLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_MAINTAIN_TYPE add constraint
+R_SFMT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_PAD_TYPE add constraint
+R_SFPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_ROAD_TYPE add constraint
+R_SFRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_STATUS add constraint
+R_SFS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_STATUS_TYPE add constraint
+R_SFST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_SURFACE_TYPE add constraint
+R_SFST1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_TOWER_TYPE add constraint
+R_SFTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_VEHICLE_TYPE add constraint
+R_SVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_VESSEL_ROLE add constraint
+R_SFVR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_VESSEL_TYPE add constraint
+R_SFVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SF_XREF_TYPE add constraint
+R_SFXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SHOW_TYPE add constraint
+R_ST4_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SHUTIN_PRESS_TYPE add constraint
+R_SPT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SOURCE add constraint
+R_S_R_S_FK foreign key (ROW_SOURCE) references
+r_source(SOURCE);
+alter table R_SOURCE_ORIGIN add constraint
+R_SOR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SPACING_UNIT_TYPE add constraint
+R_SUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SPATIAL_DESC_COMP_TYPE add constraint
+R_SPCT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SPATIAL_DESC_TYPE add constraint
+R_SDT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SPATIAL_XREF_TYPE add constraint
+R_SXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SP_POINT_VERSION_TYPE add constraint
+R_SPVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SP_ZONE_DEFIN__XREF add constraint
+R_SZDX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SP_ZONE_DERIV add constraint
+R_SZD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SP_ZONE_TYPE add constraint
+R_SZT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STATUS_GROUP add constraint
+R_SG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STORE_STATUS add constraint
+R_SS3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_ACQTN_METHOD add constraint
+R_SAM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_AGE_METHOD add constraint
+R_SAM1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_ALIAS_TYPE add constraint
+R_SAT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_COLUMN_TYPE add constraint
+R_SCT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_COL_XREF_TYPE add constraint
+R_SCXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_CORR_CRITERIA add constraint
+R_SCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_CORR_TYPE add constraint
+R_SCTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_DESC_TYPE add constraint
+R_SDT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_EQUIV_DIRECT add constraint
+R_SED_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_EQUIV_TYPE add constraint
+R_SET1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_FLD_NODE_LOC add constraint
+R_SFNL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_HIERARCHY add constraint
+R_SH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_INTERP_METHOD add constraint
+R_SIM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_NAME_SET_TYPE add constraint
+R_SNST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_OCCURRENCE_TYPE add constraint
+R_SOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_STATUS add constraint
+R_SSTAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_TOPO_RELATION add constraint
+R_STR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_TYPE add constraint
+R_STYPE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_UNIT_COMP_TYPE add constraint
+R_STUCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_UNIT_DESC add constraint
+R_SUD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_UNIT_QUALIFIER add constraint
+R_SUQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STRAT_UNIT_TYPE add constraint
+R_SUNT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STREAMER_COMP add constraint
+R_SC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_STREAMER_POSITION add constraint
+R_SP1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SUBSTANCE_COMP_TYPE add constraint
+R_SCT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_SW_APPLICATION add constraint
+R_SA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TAX_CREDIT_CODE add constraint
+R_TCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TEST_EQUIPMENT add constraint
+R_TE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TEST_PERIOD_TYPE add constraint
+R_TPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TEST_RECOV_METHOD add constraint
+R_TRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TEST_RESULT add constraint
+R_TR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TEST_SHUTOFF_TYPE add constraint
+R_TST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TEST_SUBTYPE add constraint
+R_TS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TIMEZONE add constraint
+R_TZ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TITLE_OWN_TYPE add constraint
+R_TOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TOUR_OCCURRENCE_TYPE add constraint
+R_TOT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TRACE_HEADER_FORMAT add constraint
+R_THF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TRACE_HEADER_WORD add constraint
+R_THW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TRANS_COMP_TYPE add constraint
+R_TCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TRANS_STATUS add constraint
+R_TS1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TRANS_TYPE add constraint
+R_TT3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TREATMENT_FLUID add constraint
+R_TF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TREATMENT_TYPE add constraint
+R_TT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TUBING_GRADE add constraint
+R_TG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TUBING_TYPE add constraint
+R_TT2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_TVD_METHOD add constraint
+R_TM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VELOCITY_COMPUTE add constraint
+R_VC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VELOCITY_DIMENSION add constraint
+R_VD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VELOCITY_TYPE add constraint
+R_VT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VERTICAL_DATUM_TYPE add constraint
+R_VDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VESSEL_REFERENCE add constraint
+R_VR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VOLUME_METHOD add constraint
+R_VM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_VSP_TYPE add constraint
+R_VT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WASTE_ADJUST_REASON add constraint
+R_WAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WASTE_FACILITY_TYPE add constraint
+R_WFT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WASTE_HANDLING add constraint
+R_WH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WASTE_HAZARD_TYPE add constraint
+R_WHZ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WASTE_MATERIAL add constraint
+R_WM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WASTE_ORIGIN add constraint
+R_WO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WATER_BOTTOM_ZONE add constraint
+R_WBZ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WATER_CONDITION add constraint
+R_WATC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WATER_DATUM add constraint
+R_WD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WATER_TYPE add constraint
+R_WT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WEATHER_CONDITION add constraint
+R_WCOND_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_ACTIVITY_CAUSE add constraint
+R_WACA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_ACTIVITY_COMP_TYPE add constraint
+R_WACT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_ACT_TYPE_EQUIV add constraint
+R_WATE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_ALIAS_LOCATION add constraint
+R_WAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_CIRC_PRESS_TYPE add constraint
+R_WCPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_CLASS add constraint
+R_WC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_COMPONENT_TYPE add constraint
+R_WCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_DATUM_TYPE add constraint
+R_WDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_DOWNTIME_TYPE add constraint
+R_WDT1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_DRILL_OP_TYPE add constraint
+R_WDOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_FACILITY_USE_TYPE add constraint
+R_WFUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LEVEL_TYPE add constraint
+R_WLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LIC_COND add constraint
+R_WLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LIC_COND_CODE add constraint
+R_WLCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LIC_DUE_CONDITION add constraint
+R_WLDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LIC_VIOL_RESOL add constraint
+R_WLVRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LIC_VIOL_TYPE add constraint
+R_WLVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_LOG_CLASS add constraint
+R_WLC1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_NODE_PICK_METHOD add constraint
+R_WNPM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_PROFILE_TYPE add constraint
+R_WPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_QUALIFIC_TYPE add constraint
+R_WQT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_REF_VALUE_TYPE add constraint
+R_WRVT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_RELATIONSHIP add constraint
+R_WR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_SERVICE_METRIC add constraint
+R_WSM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_SERV_METRIC_CODE add constraint
+R_WSMC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_SF_USE_TYPE add constraint
+R_WSUT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_STATUS add constraint
+R_WS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_STATUS_TYPE add constraint
+R_WST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_TEST_TYPE add constraint
+R_WTT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_XREF_TYPE add constraint
+R_WXT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WELL_ZONE_INT_VALUE add constraint
+R_WZIV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WIND_STRENGTH add constraint
+R_WIND_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WORK_BID_TYPE add constraint
+R_WBT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_BA_ROLE add constraint
+R_WOBR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_COMPONENT_TYPE add constraint
+R_WOCT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_CONDITION add constraint
+R_WOC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_DELIVERY_TYPE add constraint
+R_WODT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_INSTRUCTION add constraint
+R_WOIT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_TYPE add constraint
+R_WOT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table R_WO_XREF_TYPE add constraint
+R_WOX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_ANALYSIS add constraint
+SA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_ANAL_COMPONENT add constraint
+SACOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_GAS_ANALYSIS add constraint
+SAGA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_GAS_ANAL_DETAIL add constraint
+SAGAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_OIL_ANALYSIS add constraint
+SAOA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_OIL_ANAL_DETAIL add constraint
+SAOAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_OIL_VISCOSITY add constraint
+SAOV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_WATER_ANALYSIS add constraint
+SAWA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SAMPLE_WATER_ANAL_DTL add constraint
+SAWAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_3D add constraint
+SS3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_ACQTN_DESIGN add constraint
+SSAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_ACQTN_SPECTRUM add constraint
+SSASP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_ACQTN_SURVEY add constraint
+SAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_ACTIVITY add constraint
+SSACT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_ALIAS add constraint
+SSAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_BA_SERVICE add constraint
+SSBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_BIN_GRID add constraint
+SSBG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_BIN_ORIGIN add constraint
+SSBO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_BIN_POINT_TRACE add constraint
+SSBPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_CHANNEL add constraint
+SSCH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_GROUP_COMP add constraint
+SSGC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INSPECTION add constraint
+SSI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INSP_COMPONENT add constraint
+SSIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INTERP_COMP add constraint
+SSICOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INTERP_LOAD add constraint
+SSIL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INTERP_LOAD_PARM add constraint
+SSILP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INTERP_SET add constraint
+SSIS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_INTERP_SURFACE add constraint
+SSISU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE add constraint
+SLIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_ALIAS add constraint
+SLICAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_AREA add constraint
+SLICA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_COND add constraint
+SLICC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_REMARK add constraint
+SLICR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_STATUS add constraint
+SLICS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_TYPE add constraint
+SLICT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LICENSE_VIOLATION add constraint
+SLICV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_LINE add constraint
+SSL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PATCH add constraint
+SSPA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PATCH_DESC add constraint
+SSPD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PICK add constraint
+SSPK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_POINT add constraint
+SSPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_POINT_FLOW add constraint
+SSPF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_POINT_FLOW_DESC add constraint
+SSPFD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_POINT_SUMMARY add constraint
+SSPSU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_POINT_VERSION add constraint
+SSPV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_COMPONENT add constraint
+SSPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_PARM add constraint
+SSPP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_PLAN add constraint
+SSPPL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_PLAN_PARM add constraint
+SSPPP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_PLAN_STEP add constraint
+SSPPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_SET add constraint
+SSPRS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_STEP add constraint
+SSPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_PROC_STEP_COMPONENT add constraint
+SSPSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_RECORD add constraint
+SSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_RECVR_MAKE add constraint
+SSRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_RECVR_SETUP add constraint
+SSRS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SEGMENT add constraint
+SSEG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET add constraint
+SS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_AREA add constraint
+SSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_AUTHORIZE add constraint
+SSAU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_COMPONENT add constraint
+SSCMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_GEOMETRY add constraint
+SSG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_JURISDICTION add constraint
+SSJ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_PLAN add constraint
+SSP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SET_STATUS add constraint
+SSST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_SP_SURVEY add constraint
+SSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_STREAMER add constraint
+SST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_STREAMER_BUILD add constraint
+SSB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_STREAMER_COMP add constraint
+SSC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_TRANSACTION add constraint
+SSTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_TRANS_COMPONENT add constraint
+SSTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_VELOCITY add constraint
+SSVL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_VELOCITY_INTERVAL add constraint
+SSVI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_VELOCITY_VOLUME add constraint
+SSVV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_VESSEL add constraint
+SSV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SEIS_WELL add constraint
+SSW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_AIRCRAFT add constraint
+SFAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_AIRSTRIP add constraint
+SFAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_ALIAS add constraint
+SFAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_BA_CREW add constraint
+SFBC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_BA_SERVICE add constraint
+SFBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_BRIDGE add constraint
+SFB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_COMPONENT add constraint
+SFCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_DESCRIPTION add constraint
+SFDE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_DISPOSAL add constraint
+SFDDI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_DOCK add constraint
+SFD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_ELECTRIC add constraint
+SFE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_EQUIPMENT add constraint
+SFEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_GEOMETRY add constraint
+SFGM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_HABITAT add constraint
+SFH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_LANDING add constraint
+SFL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_MAINTAIN add constraint
+SFM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_MONUMENT add constraint
+SFMO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_OTHER add constraint
+SFO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_PAD add constraint
+SFP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_PLATFORM add constraint
+SFPL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_PORT add constraint
+SFPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RAILWAY add constraint
+SFRR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RESTRICTION add constraint
+SFREST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_REST_REMARK add constraint
+SFRESTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RIG add constraint
+SFRIG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RIG_BOP add constraint
+SFRB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RIG_GENERATOR add constraint
+SFRG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RIG_OVERHEAD_EQUIP add constraint
+SFROE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RIG_PUMP add constraint
+SFRP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_RIG_SHAKER add constraint
+SFRS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_ROAD add constraint
+SFR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_STATUS add constraint
+SFST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_SUPPORT_FACILITY add constraint
+SF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_TOWER add constraint
+SFT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_VEHICLE add constraint
+SFVH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_VESSEL add constraint
+SFV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_WASTE add constraint
+SFW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_WASTE_DISPOSAL add constraint
+SFWD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SF_XREF add constraint
+SFX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SOURCE_DOCUMENT add constraint
+SRCD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SOURCE_DOC_AUTHOR add constraint
+SRCDA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SOURCE_DOC_BIBLIO add constraint
+SRCDB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SPACING_UNIT add constraint
+SU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SPACING_UNIT_INST add constraint
+SUI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SPATIAL_DESCRIPTION add constraint
+SPD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_BOUNDARY add constraint
+SPB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_BOUNDARY_VERSION add constraint
+SPBV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_COMPONENT add constraint
+SPCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_DESC_TEXT add constraint
+SPDT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_DESC_XREF add constraint
+SPDX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_GEOMETRY add constraint
+SPG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_LINE add constraint
+SPLN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_LINE_POINT add constraint
+SPLP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_LINE_POINT_VERSION add constraint
+SPLPV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_MINERAL_ZONE add constraint
+SPMZ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL add constraint
+SPP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_CARTER add constraint
+SPCA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_CONGRESS add constraint
+SPCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_DLS add constraint
+SPDLS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_DLS_ROAD add constraint
+SPDR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_FPS add constraint
+SPFPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_LIBYA add constraint
+SPLY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_LOT add constraint
+SPL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_M_B add constraint
+SPMB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_NE_LOC add constraint
+SPNL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_NORTH_SEA add constraint
+SPNS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_NTS add constraint
+SPNTS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_OFFSHORE add constraint
+SPOFF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_OHIO add constraint
+SPOH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_PBL add constraint
+SPPBL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_REMARK add constraint
+SPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_PARCEL_TEXAS add constraint
+SPTX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_POINT add constraint
+SPPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_POINT_VERSION add constraint
+SPPV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_POLYGON add constraint
+SPPOL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_ZONE_DEFINITION add constraint
+SPZD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_ZONE_DEFIN_XREF add constraint
+SZDX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SP_ZONE_SUBSTANCE add constraint
+SPZS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_ACQTN_METHOD add constraint
+STAM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_ALIAS add constraint
+STAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_COLUMN add constraint
+STCOL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_COLUMN_ACQTN add constraint
+STCA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_COLUMN_UNIT add constraint
+STCU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_COLUMN_XREF add constraint
+STCX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_COL_UNIT_AGE add constraint
+STCUA_R_S_FK foreign key (AGE_SOURCE) references
+r_source(SOURCE);
+alter table STRAT_EQUIVALENCE add constraint
+STE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_FIELD_ACQTN add constraint
+STFA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_FIELD_GEOMETRY add constraint
+STFG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_FIELD_NODE add constraint
+STFN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_FIELD_SECTION add constraint
+STFS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_FIELD_STATION add constraint
+STFST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_FLD_INTERP_AGE add constraint
+STFIA_R_S_FK foreign key (AGE_SOURCE) references
+r_source(SOURCE);
+alter table STRAT_HIERARCHY add constraint
+STH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_HIERARCHY_DESC add constraint
+STHD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_INTERP_CORR add constraint
+STIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_NAME_SET add constraint
+STNS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_NAME_SET_XREF add constraint
+STNSX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_NODE_VERSION add constraint
+STNV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_TOPO_RELATION add constraint
+STTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_UNIT add constraint
+STU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_UNIT_AGE add constraint
+STUA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_UNIT_COMPONENT add constraint
+STUC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_UNIT_DESCRIPTION add constraint
+STUD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_WELL_ACQTN add constraint
+STWC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table STRAT_WELL_INTERP_AGE add constraint
+STWIA_R_S_FK foreign key (AGE_SOURCE) references
+r_source(SOURCE);
+alter table STRAT_WELL_SECTION add constraint
+STWS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SUBSTANCE add constraint
+SUB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table SUBSTANCE_COMPOSITION add constraint
+SUBC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL add constraint
+W_R_S_FK foreign key (PRIMARY_SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY add constraint
+WAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_CAUSE add constraint
+WACA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_COMPONENT add constraint
+WACOMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_DURATION add constraint
+WADU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_SET add constraint
+WAS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_TYPE add constraint
+WAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_TYPE_ALIAS add constraint
+WATA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ACTIVITY_TYPE_EQUIV add constraint
+WATE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_AIR_DRILL add constraint
+WAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_AIR_DRILL_INTERVAL add constraint
+WADI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_AIR_DRILL_PERIOD add constraint
+WADP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ALIAS add constraint
+WA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_AREA add constraint
+WAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_BA_SERVICE add constraint
+WBS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CEMENT add constraint
+WCE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_COMPLETION add constraint
+WCO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_COMPONENT add constraint
+WC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE add constraint
+WCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_ANALYSIS add constraint
+WCRA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_ANAL_METHOD add constraint
+WCRAM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_ANAL_REMARK add constraint
+WCRAR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_DESCRIPTION add constraint
+WCRD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_REMARK add constraint
+WCRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_SAMPLE_ANAL add constraint
+WCRSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_SAMPLE_DESC add constraint
+WCRSD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_SAMPLE_RMK add constraint
+WCRSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_SHIFT add constraint
+WCRS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_CORE_STRAT_UNIT add constraint
+WCRSU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DIR_SRVY add constraint
+WDS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DIR_SRVY_STATION add constraint
+WDSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DIR_SURVEY_GEOMETRY add constraint
+WDSG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_ADD_INV add constraint
+WDAI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_ASSEMBLY add constraint
+WDA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_ASSEMBLY_COMP add constraint
+WDAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_ASSEMBLY_PER add constraint
+WDAP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_BIT_CONDITION add constraint
+WDBC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_BIT_INTERVAL add constraint
+WDBI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_BIT_JET add constraint
+WDBJ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_BIT_PERIOD add constraint
+WDBP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_CHECK add constraint
+WDCK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_CHECK_SET add constraint
+WDCKS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_CHECK_TYPE add constraint
+WDCKT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_EQUIPMENT add constraint
+WDE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_INT_DETAIL add constraint
+WDID_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_MUD_ADDITIVE add constraint
+WDMA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_MUD_INTRVL add constraint
+WDMI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_MUD_WEIGHT add constraint
+WDMW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PERIOD add constraint
+WDP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PERIOD_CREW add constraint
+WDPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PERIOD_EQUIP add constraint
+WDPE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PERIOD_INV add constraint
+WDPIN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PERIOD_SERV add constraint
+WDPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PERIOD_VESSEL add constraint
+WDPV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_PIPE_INV add constraint
+WDPI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_REMARK add constraint
+WDRK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_REPORT add constraint
+WDR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_SHAKER add constraint
+WDSH_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_STATISTIC add constraint
+WDSTAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_DRILL_WEATHER add constraint
+WDW_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_EQUIPMENT add constraint
+WEQ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_FACILITY add constraint
+WFAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_GEOMETRY add constraint
+WG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_HORIZ_DRILL add constraint
+WHD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_HORIZ_DRILL_KOP add constraint
+WHDK_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_HORIZ_DRILL_POE add constraint
+WHDP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_HORIZ_DRILL_SPOKE add constraint
+WHDS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE add constraint
+WLIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE_ALIAS add constraint
+WLICAL_R_S_FK foreign key (ALIAS_SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE_AREA add constraint
+WLICA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE_COND add constraint
+WLICC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE_REMARK add constraint
+WLICR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE_STATUS add constraint
+WLICS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LICENSE_VIOLATION add constraint
+WLV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG add constraint
+WL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_AXIS_COORD add constraint
+WLAC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CLASS add constraint
+WLCLS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CLS_CRV_CLS add constraint
+WLCCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CRV_CLS_XREF add constraint
+WLCCX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE add constraint
+WLC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_AXIS add constraint
+WLCA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_CLASS add constraint
+WLCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_FRAME add constraint
+WLCF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_PROC add constraint
+WLCP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_REMARK add constraint
+WLCR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_SCALE add constraint
+WLCS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_SPLICE add constraint
+WLCSP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_CURVE_VALUE add constraint
+WLCV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DGTZ_CURVE add constraint
+WLDC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICTIONARY add constraint
+WLD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_ALIAS add constraint
+WLDA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_BA add constraint
+WLDB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_CRV_CLS add constraint
+WLDCC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_CURVE add constraint
+WLDCV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_PARM add constraint
+WLDP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_PARM_CLS add constraint
+WLDPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_PARM_VAL add constraint
+WLDPV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_DICT_PROC add constraint
+WLDPR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_JOB add constraint
+WLJ_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_PARM add constraint
+WLP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_PARM_ARRAY add constraint
+WLPA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_PARM_CLASS add constraint
+WLPC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_PASS add constraint
+WLPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_REMARK add constraint
+WLR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_TRIP add constraint
+WLT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_LOG_TRIP_REMARK add constraint
+WLTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_MISC_DATA add constraint
+WMD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_MUD_PROPERTY add constraint
+WMP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_MUD_RESISTIVITY add constraint
+WMR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_MUD_SAMPLE add constraint
+WMS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_NODE add constraint
+WN_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_NODE_AREA add constraint
+WNA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_NODE_GEOMETRY add constraint
+WNG_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_NODE_M_B add constraint
+WNMB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_NODE_STRAT_UNIT add constraint
+WNSU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_NODE_VERSION add constraint
+WNV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PAYZONE add constraint
+WP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PERFORATION add constraint
+WPRF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PERF_REMARK add constraint
+WPRFR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PERMIT_TYPE add constraint
+WPT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PLUGBACK add constraint
+WPL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_POROUS_INTERVAL add constraint
+WPI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PRESSURE add constraint
+WPSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PRESSURE_AOF add constraint
+WPA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PRESSURE_AOF_4PT add constraint
+WPA4_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_PRESSURE_BH add constraint
+WPB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_REMARK add constraint
+WR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_SHOW add constraint
+WS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_SHOW_REMARK add constraint
+WSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_SIEVE_ANALYSIS add constraint
+WSA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_SIEVE_SCREEN add constraint
+WSS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_STATUS add constraint
+WST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_SUPPORT_FACILITY add constraint
+WSF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST add constraint
+WT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_ANALYSIS add constraint
+WTA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_COMPUT_ANAL add constraint
+WTCA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_CONTAMINANT add constraint
+WTC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_CUSHION add constraint
+WTCU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_EQUIPMENT add constraint
+WTE_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_FLOW add constraint
+WTF_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_FLOW_MEAS add constraint
+WTFM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_MUD add constraint
+WTM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_PERIOD add constraint
+WTP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_PRESSURE add constraint
+WTPSR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_PRESS_MEAS add constraint
+WTPM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_RECORDER add constraint
+WTR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_RECOVERY add constraint
+WTRCV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_REMARK add constraint
+WTRM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_SHUTOFF add constraint
+WTS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TEST_STRAT_UNIT add constraint
+WTSU_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TREATMENT add constraint
+WTRT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_TUBULAR add constraint
+WTUB_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_VERSION add constraint
+WV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_XREF add constraint
+WX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ZONE_INTERVAL add constraint
+WZI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WELL_ZONE_INTRVL_VALUE add constraint
+WZIV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER add constraint
+WO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_ALIAS add constraint
+WOAL_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_BA add constraint
+WOBA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_COMPONENT add constraint
+WOCOM_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_CONDITION add constraint
+WOC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_DELIVERY add constraint
+WOD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_DELIVERY_COMP add constraint
+WODC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_INSTRUCTION add constraint
+WOI_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_INST_COMP add constraint
+WOIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table WORK_ORDER_XREF add constraint
+WOX_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table ZONE add constraint
+Z_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_CONT_COUNTY add constraint
+Z_CCTY_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_CONT_DISTRICT add constraint
+Z_CD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_CONT_PROV_STATE add constraint
+Z_CPS_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_FIELD_IN_COUNTY add constraint
+Z_FLDIC_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_CITY add constraint
+Z_R_C_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_COUNTRY add constraint
+Z_R_C1_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_COUNTY add constraint
+Z_R_C2_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_DISTRICT add constraint
+Z_R_D_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_GEOGRAPHIC_REGION add constraint
+Z_R_GR_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_GEOLOGIC_PROVINCE add constraint
+Z_R_GP_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_LAND_DISTRICT add constraint
+Z_R_LD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_PROVINCE_STATE add constraint
+Z_R_PS3_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_R_WELL_ACTIVITY_TYPE add constraint
+Z_R_WAT_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_DRILL_STATUS add constraint
+Z_WDST_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_EVENT add constraint
+Z_WEV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_GAS_ANALYSIS add constraint
+Z_WGA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_GAS_ANAL_DETAIL add constraint
+Z_WGAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_OIL_ANALYSIS add constraint
+Z_WOA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_OIL_VISCOSITY add constraint
+Z_WOV_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_TOUR_OCCURRENCE add constraint
+Z_WTO_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_WATER_ANALYSIS add constraint
+Z_WWA_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);
+alter table Z_WELL_WATER_ANAL_DTL add constraint
+Z_WWAD_R_S_FK foreign key (SOURCE) references
+r_source(SOURCE);

@@ -1,5 +1,5 @@
 #convert an oracle ddl to postgresql, and write out the converted file
-#usage: ruby convert.rb PPDM39_XX.SQL
+#usage: ruby convert.rb PPDM38_XX.SQL
 
 
 lines = []
@@ -46,14 +46,16 @@ File.open(ARGV[0]).each_line do |line|
   line = parse_comment(line) if line.match /^PROMPT/
 
   # GUID uses MODIFY, which PostgreSQL does not have
-  if File.basename(ARGV[0]).upcase == "PPDM39_GUID.SQL"
+  #if File.basename(ARGV[0]).upcase == "PPDM38_GUID.SQL"
+  if File.basename(ARGV[0]).upcase == "PPDM38.GUID"
     if line.match /\sMODIFY/
       line = "ALTER TABLE #{line.split(" ")[2]} ALTER PPDM_GUID SET NOT NULL;"
     end
   end
 
   # only TAB gets the full conversion
-  if File.basename(ARGV[0]).upcase == "PPDM39_TAB.SQL"
+  #if File.basename(ARGV[0]).upcase == "PPDM38_TAB.SQL"
+  if File.basename(ARGV[0]).upcase == "PPDM38.TAB"
     line = parse_number(line) if line.match /\sNUMBER/
     line = parse_date(line) if line.match /\sDATE/
     line = line.gsub("VARCHAR2", "VARCHAR") if line.match /\sVARCHAR/
@@ -63,5 +65,5 @@ File.open(ARGV[0]).each_line do |line|
   lines << line.strip
 end
 
-path = "c:/dev/pg_ppdm/postgres_39/#{File.basename(ARGV[0])}"
+path = "c:/dev/pg_ppdm/postgres_38/#{File.basename(ARGV[0])}"
 open(path, "w"){|f| f.puts lines.join("\n") }

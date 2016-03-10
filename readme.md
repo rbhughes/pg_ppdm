@@ -1,4 +1,4 @@
-PG_PPDM39
+PG_PPDM
 ---------
 
 These files were converted from the Professional Petroleum Data Management ([PPDM]) Association's Oracle DDL. It seems to work on PostgreSQL 9.3.5, but there has not (yet) been any extensive testing.
@@ -15,11 +15,11 @@ By opening and accessing this information, you are agreeing to these Terms and C
 
 TODO: gotta set the schema! don't do that stuff below just yet.
 
-#### Quick Start:
+#### Quick Start (using PPDM 3.9):
 
 1. Ensure that postgresql\bin stuff is in the PATH: `C:\dev\PostgreSQL\9.5\bin`
-2. Clone this repo (assume c:\dev here): `git clone https://github.com/rbhughes/pg_ppdm39.git`
-3. CD to the creation scripts folder: `cd c:/dev/pg_ppdm39/postgres`
+2. Clone this repo (assume c:\dev here): `git clone https://github.com/rbhughes/pg_ppdm.git`
+3. CD to the creation scripts folder: `cd c:/dev/pg_ppdm/postgres_39`
 4. Run these commands after loggin in to psql thusly: `psql -U postgres`
 
 ```sql

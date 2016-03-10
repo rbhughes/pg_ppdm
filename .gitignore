@@ -38,3 +38,4 @@ Icon
 oracle*
 postgres_38/*.txt
 postgres_39/*.txt
+convert.rb

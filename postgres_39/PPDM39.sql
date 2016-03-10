@@ -4,8 +4,6 @@
 
 -- This PostgreSQL DDL is for the PPDM39 model
 -- It was adapted from the Oracle DDL
--- This is an EVALUTATION version, so you might want to run it like this:
--- psql -U ppdm_user -d ppdm39 -f PPDM39.SQL -v ON_ERROR_STOP=1
 
 -- Differences from the Oracle DDL:
 -- 1. Spool behavior: may experiment echos or use the postgres stderr log.
