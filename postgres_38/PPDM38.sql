@@ -120,9 +120,9 @@ select 'Date: ' || to_char(current_timestamp, 'YYYYMMDD HH24:MI:SS') || ' - STAR
 \qecho 'Creating R_Source Constraints'
 \qecho 'This script is MANDATORY for PPDM 3.8'
 \qecho '======================================================================'
-select 'Date: ' || to_char(current_timestamp, 'YYYYMMDD HH24:MI:SS') || ' - START12 - PPDM38.RSRC' as START_12;
+select 'Date: ' || to_char(current_timestamp, 'YYYYMMDD HH24:MI:SS') || ' - START12 - PPDM38.rsrc' as START_12;
 \qecho '======================================================================'
-\i PPDM38.RSRC
+\i PPDM38.rsrc
 
 
 \echo  'Creating GUID not NULL Constraints...'

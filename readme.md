@@ -20,7 +20,7 @@ TODO: gotta set the schema! don't do that stuff below just yet.
 1. Ensure that postgresql\bin stuff is in the PATH: `C:\dev\PostgreSQL\9.5\bin`
 2. Clone this repo (assume c:\dev here): `git clone https://github.com/rbhughes/pg_ppdm.git`
 3. CD to the creation scripts folder: `cd c:/dev/pg_ppdm/postgres_39`
-4. Run these commands after loggin in to psql thusly: `psql -U postgres`
+4. Run these commands after logging in to psql thusly: `psql -U postgres`
 
 ```sql
 CREATE ROLE ppdm_user WITH PASSWORD 'ppdm_pass';
