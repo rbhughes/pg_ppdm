@@ -11,9 +11,8 @@ Use of this data is subject to the Terms and Conditions outlined in the file PPD
 By opening and accessing this information, you are agreeing to these Terms and Conditions.
 
 
-#####This is a work in progress! Just started testing again on 9.5.1.
+##### Just started testing again on pg 9.5.1.
 
-TODO: gotta set the schema! don't do that stuff below just yet.
 
 #### Quick Start (using PPDM 3.9):
 
