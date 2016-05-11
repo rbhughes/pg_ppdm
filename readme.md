@@ -36,7 +36,7 @@ SET ROLE ppdm_user;
 
 CREATE DATABASE ppdm39 WITH OWNER ppdm_user;
 
-connect ppdm39 ppdm_user;   (...enter password, 'ppdm_pass')
+\connect ppdm39 ppdm_user;   (...enter password, 'ppdm_pass')
 
 CREATE SCHEMA IF NOT EXISTS ppdm AUTHORIZATION ppdm_user;
 
