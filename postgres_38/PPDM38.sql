@@ -142,4 +142,15 @@ select 'Date: ' || to_char(current_timestamp, 'YYYYMMDD HH24:MI:SS') || ' - STAR
 \qecho '======================================================================'
 \i PPDM38.guid
 
+
+\echo  'Setting Foreign Key Constraints DEFERRABLE...'
+\qecho 'Setting Foreign Key Constraints DEFERRABLE'
+\qecho 'This script is OPTIONAL and not from PPDM'
+\qecho '======================================================================'
+select 'Date: ' || to_char(current_timestamp, 'YYYYMMDD HH24:MI:SS') || ' - START15 - PPDM38.defer' as START_15;
+\qecho '======================================================================'
+\i PPDM38.defer
+
+
+
 \o
