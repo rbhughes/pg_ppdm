@@ -2,6 +2,7 @@ PG_PPDM
 ---------
 
 ![ppdm_logo](/ppdm_logo.png?raw=true "ppdm_logo")
+|
 ![postgresql_logo](/postgresql_logo.png?raw=true "postgresql_logo")
 
 
@@ -13,9 +14,14 @@ But what if you wanted something a bit more...open? Enter [pg_ppdm], which trans
 
 > Collaboration, forks, contributions, complaints: all are welcome!
 
+Tested/developed on:
+
+* Windows 10
+* PPDM 3.8 and 3.9 (converted from Oracle DDL)
+* PostgreSQL 9.5.1 and 9.6.2
+
 ---
 ### Quick Start
-*(tested on Windows 10, PPDM 3.9 and PostgreSQL 9.5.1)*
 
 1. Ensure that postgresql\bin stuff is in the PATH:
 `C:\dev\PostgreSQL\9.5\bin`
@@ -51,8 +57,13 @@ NOTE: The PPDM38 scripts include a custom script to set foreign keys to DEFERRAB
 
 If all goes well, you should have a *ppdm39* database with gobs of tables in the *ppdm* schema owned by the admin *ppdm_user* with a password of *ppdm_pass* like this:
 
+![pgadmin3 screen shot](/pgadmin3.png?raw=true "pgadmin3_view")
+
+...or if you prefer PostgreSQL 9.6...
+
+![pgadmin4 screen shot](/pgadmin4.png?raw=true "pgadmin4_view")
+
+
 [ppdm]:http://ppdm.org/
 [pg_ppdm]:https://github.com/rbhughes/pg_ppdm
 [PostgreSQL]:http://www.postgresql.org/
-
-![pgadmin3 screen shot](/pgadmin3.png?raw=true "pgadmin_view")
