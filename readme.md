@@ -3,8 +3,7 @@ PG_PPDM
 
 ![postgresql_logo](/postgresql_logo.png?raw=true "postgresql_logo")
 
-#####
-+
+##### +
 
 ![ppdm_logo](/ppdm_logo.png?raw=true "ppdm_logo")
 
