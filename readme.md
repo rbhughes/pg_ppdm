@@ -1,9 +1,13 @@
 PG_PPDM
 ---------
 
-![ppdm_logo](/ppdm_logo.png?raw=true "ppdm_logo")
-|
 ![postgresql_logo](/postgresql_logo.png?raw=true "postgresql_logo")
+
+#####
++
+
+![ppdm_logo](/ppdm_logo.png?raw=true "ppdm_logo")
+
 
 
 The Professional Petroleum Data Management Association's ([PPDM]) data model is a very large (1700+ tables), robust relational data model ideal for Master Data Management strategies and for business focused application development.  It represents the cumulative input of subject matter experts, data management professionals, developers, regulators, data vendors, and application vendors. PPDM estimates the value of this cumulative effort to exceed $100 million.
@@ -23,11 +27,11 @@ Tested/developed on:
 ---
 ### Quick Start
 
-1. Ensure that postgresql\bin stuff is in the PATH:
+1. Ensure that postgresql\bin stuff is in your PATH:
 `C:\dev\PostgreSQL\9.5\bin`
 2. Clone this repo (assume c:\dev here):
 `git clone https://github.com/rbhughes/pg_ppdm.git`
-3. CD to the creation scripts folder:
+3. cd to the creation scripts folder for your preferred PPDM version:
 `cd c:/dev/pg_ppdm/postgres_39`
 4. Run these commands after logging in to psql thusly:
 `psql -U postgres`
@@ -53,7 +57,8 @@ SET search_path to ppdm;
 \q
 
 ```
-NOTE: The PPDM38 scripts include a custom script to set foreign keys to DEFERRABLE by default. Comment out `PPDM38.defer` to exclude this.
+
+> NOTE: The PPDM38 scripts include a custom script to set foreign keys to DEFERRABLE by default. Comment out `PPDM38.defer` to exclude this.
 
 If all goes well, you should have a *ppdm39* database with gobs of tables in the *ppdm* schema owned by the admin *ppdm_user* with a password of *ppdm_pass* like this:
 
